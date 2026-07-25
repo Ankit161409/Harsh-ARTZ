@@ -33,7 +33,9 @@
   text-decoration: none;
 }
 .dropdown-link:hover {
-  background: #998686;
+  /* background: #998686; */
+  background:rgba(rgb(19, 19, 19), green, blue, 0.2);
+
 }
 
 /* Mobile accordion styles */

@@ -1,7 +1,7 @@
-.size
+/* .size
 {
 image-resolution: calc();
-}
+} */
 .flip-card {
   width: 200px;   /* width of the card */
   height: 300px;  /* height of the card */

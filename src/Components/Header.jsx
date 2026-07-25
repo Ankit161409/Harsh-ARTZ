@@ -40,15 +40,15 @@ const Header = () => {
       path: "/art-gallery",
       children: [
         { name: "Paintings", path: "/art-gallery/paintings" },
-         { name: "Sketches", path: "/art-gallery/sketches" },
+        { name: "Sketches", path: "/art-gallery/sketches" },
         { name: "Portraits", path: "/art-gallery/portraits" },
-  { name: "Acrylic Paintings", path: "/art-gallery/acrylic-paintings" },
-  { name: "Watercolor Paintings", path: "/art-gallery/watercolor-paintings" },
-  { name: "Pen Sketches", path: "/art-gallery/pen-sketches" },
-  { name: "Charcoal Sketches", path: "/art-gallery/charcoal-sketches" },
-  { name: "Mixed Media Sketches", path: "/art-gallery/mixed-media-sketches" },
-  { name: "Digital Art", path: "/art-gallery/digital-art" },
-   { name: "Coloured Pencil", path: "/art-gallery/colouredPencil" }
+        { name: "Acrylic Paintings", path: "/art-gallery/acrylic-paintings" },
+        { name: "Watercolor Paintings", path: "/art-gallery/watercolor-paintings" },
+        { name: "Pen Sketches", path: "/art-gallery/pen-sketches" },
+        { name: "Charcoal Sketches", path: "/art-gallery/charcoal-sketches" },
+        { name: "Mixed Media Sketches", path: "/art-gallery/mixed-media-sketches" },
+        { name: "Digital Art", path: "/art-gallery/digital-art" },
+        { name: "Coloured Pencil", path: "/art-gallery/colouredPencil" }
       ],
     },
     { name: "Let's Connect", path: "/lets-connect" },
@@ -58,11 +58,10 @@ const Header = () => {
     <>
       {/* HEADER */}
       <motion.header
-        className={`site-header black ${
-          isHome || isArtGallery || isShop || isContact || isShopDetail
-            ? "home-header"
-            : "inner-header"
-        } ${scrolled ? "scrolled" : ""}`}
+        className={`site-header black ${isHome || isArtGallery || isShop || isContact || isShopDetail
+          ? "home-header"
+          : "inner-header"
+          } ${scrolled ? "scrolled" : ""}`}
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
