@@ -1,0 +1,468 @@
+@media (max-width: 1400px) {
+  .header-inner {
+    padding: 0 20px;
+  }
+
+    .hero-content {
+    max-width: 460px;
+  }
+
+  .hero {
+    background-position: center top;
+  }
+
+    .art-top {
+    padding: 100px 30px 180px;
+  }
+
+  .section-heading {
+    font-size: 36px;
+  }
+
+  .section-text {
+    font-size: 17px;
+    max-width: none;
+  }
+
+  .art-grid {
+    gap: 35px;
+    padding: 0 30px;
+  }
+
+  .flip-card {
+    height: 280px;
+  }
+
+  .flip-back h3 {
+    font-size: 30px;
+  }
+
+   .content-wrapper {
+    padding: 100px 30px 180px;
+    gap: 3rem;
+  }
+
+  .artist-text h2 {
+    font-size: 36px;
+  }
+
+  .artist-text h3 {
+    font-size: 30px;
+  }
+
+  .artist-text p {
+    font-size: 17px;
+  }
+
+  .hero-link {
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 35px;
+  }
+
+    .main-text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .social-icons {
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    gap: 20px;
+  }
+
+  .hero-content {
+    max-width: 420px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(40px, 5vw, 56px);
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+   .art-top {
+    padding: 90px 25px 160px;
+  }
+
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+    max-width: none;
+  }
+
+  .art-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 25px;
+  }
+
+  .flip-card {
+    height: 260px;
+  }
+
+  .flip-back h3 {
+    font-size: 28px;
+  }
+
+  .content-wrapper {
+    padding: 90px 25px 160px;
+    gap: 2.5rem;
+  }
+
+  .artist-img {
+    flex: 0 0 48%;
+  }
+
+  .artist-text {
+    flex: 0 0 50%;
+  }
+
+  .artist-text h2 {
+    font-size: 32px;
+  }
+
+  .artist-text h3 {
+    font-size: 28px;
+  }
+
+  .artist-text p {
+    font-size: 16px;
+  }
+
+    footer {
+    padding: 30px;
+  }
+
+  footer .section-text {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-nav a {
+    font-size: 16px;
+  }
+
+   .hero {
+    height: 90vh;
+  }
+
+  .hero-content {
+    max-width: 380px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+   .art-top {
+    padding: 80px 20px 140px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .section-text {
+    font-size: 15px;
+    max-width: none;
+  }
+
+  .art-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding:20px;
+  }
+
+  .flip-card {
+    height: 240px;
+  }
+
+  .flip-back h3 {
+    font-size: 26px;
+  }
+
+   .content-wrapper {
+    padding: 80px 20px 140px;
+    gap: 2rem;
+  }
+
+  .artist-text h2 {
+    font-size: 28px;
+  }
+
+  .artist-text h3 {
+    font-size: 24px;
+  }
+
+  .artist-text p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .hero-link {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 25px 20px;
+  }
+
+  footer .section-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .social-icons {
+    gap: 0.7rem;
+  }
+
+  .social-icons svg {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .hero {
+    height: 85vh;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 320px;
+    padding: 0 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+  }
+
+    .art-top {
+    padding: 70px 15px 120px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .section-text {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .btn-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .art-btn {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .art-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding:35px 15px;
+  }
+
+  .flip-card {
+    height: 400px;
+  }
+
+  .flip-back h3 {
+    font-size: 22px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 70px 20px 120px;
+    text-align: center;
+  }
+
+  .artist-img,
+  .artist-text {
+    flex: 0 0 100%;
+  }
+
+  .artist-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .artist-text h3,
+  .hero-link {
+    align-self: center;
+  }
+
+  .artist-text h2 {
+    font-size: 24px;
+  }
+
+  .artist-text h3 {
+    font-size: 22px;
+  }
+
+  .artist-text p {
+    font-size: 14px;
+  }
+
+  .hero-link {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 20px 15px;
+  }
+
+  footer .section-text {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    gap: 0.6rem;
+  }
+
+  .social-icons svg {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo a {
+    font-size: 18px;
+  }
+
+    .hero {
+    height: 80vh;
+    background-position: center top;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+    .art-top {
+    padding: 50px 10px 100px;
+  }
+
+  .section-heading {
+    font-size: 20px;
+  }
+
+  .section-text {
+    font-size: 13px;
+  }
+
+  .art-btn {
+    font-size: 14px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .art-grid{
+    padding: 55px 15px;
+  }
+
+  .flip-card {
+    height: 400px;
+  }
+
+  .flip-back h3 {
+    font-size: 20px;
+  }
+
+  .content-wrapper {
+    padding: 50px 15px 100px;
+  }
+
+  .artist-text h2 {
+    font-size: 20px;
+  }
+
+  .artist-text h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .artist-text p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .hero-link {
+    font-size: 14px;
+  }
+
+  .artist-text h3::after,
+  .hero-link::after {
+    bottom: -4px;
+  }
+
+    footer {
+    padding: 18px 12px;
+  }
+
+  footer .section-text {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    gap: 0.5rem;
+  }
+
+  .social-icons svg {
+    font-size: 16px;
+  }
+}

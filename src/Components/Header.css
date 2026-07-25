@@ -1,0 +1,62 @@
+/* Desktop dropdown */
+.main-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+.nav-item.has-dropdown {
+  position: relative;
+}
+.nav-item .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  
+  background: #0c0c0c;
+  border: 1px solid #141414;
+  padding: 8px 0;
+  display: none;
+  z-index: 20;
+}
+.nav-item.open .dropdown {
+  display: block;
+}
+.dropdown-link {
+  display: block;
+  padding: 10px 14px;
+  color: #f1eaea;
+  text-decoration: none;
+}
+.dropdown-link:hover {
+  background: #998686;
+}
+
+/* Mobile accordion styles */
+.sidebar-accordion .accordion-trigger {
+    margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  background: none;
+  /* border: 0; */
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-caret {
+  margin-left: 10px;
+  font-weight: 600;
+}
+.accordion-panel {
+  overflow: hidden;
+}
+.sidebar-sublink {
+  display: block;
+  padding: 10px 0 10px 14px;
+  text-decoration: none;
+}
