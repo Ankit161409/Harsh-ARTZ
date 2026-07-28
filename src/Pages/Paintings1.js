@@ -1,35 +1,35 @@
-import painting1 from './Images/home-painting-1.webp';
-import painting2 from './Images/home-painting-2.webp';
-import painting3 from './Images/home-painting-3.webp';
-import painting4 from './Images/home-painting-4.webp';
-import painting5 from './Images/anime.jpeg';
-import painting6 from './Images/china.jpeg';
-import lady from './Images/lady.jpeg';
-import sketch from './Images/sketch.jpeg';
-import wp2 from './Images/Wp (2).jpeg';
-import wp3 from './Images/Wp (3).jpeg';
-import wp4 from './Images/Wp (4).jpeg';
-import wp5 from './Images/Wp (5).jpeg';
-import wp6 from './Images/Wp (6).jpeg';
-import wp7 from './Images/Wp (7).jpeg';
-import wp8 from './Images/Wp (8).jpeg';
-import wp9 from './Images/Wp (9).jpeg';
-import wp10 from './Images/Wp (10).jpeg';
-import wp1 from './Images/Wp (1).jpeg';
-import wp from './Images/Wp.jpeg';
-import wp11 from './Images/Wp (11).jpeg';
-import wp12 from './Images/Wp (12).jpeg';
-import wp13 from './Images/Wp (13).jpeg';
-import wp14 from './Images/Wp (14).jpeg';
-import wp15 from './Images/Wp (15).jpeg';
- import wp16 from './Images/Wp (16).jpeg';
-import wp17 from './Images/Wp (17).jpeg';
-import wp18 from './Images/Wp (18).jpeg';
-import wp19 from './Images/Wp (19).jpeg';
-import wp20 from './Images/Wp (20).jpeg';
-import maraHuaSushant from './Images/maraHuaSushant.jpeg';
+ import painting1 from './Images/home/home-painting-1.webp';
+import painting2 from './Images/home/home-painting-2.webp';
+import painting3 from './Images/home/home-painting-3.webp';
+import painting4 from './Images/home/home-painting-4.webp';
+import painting5 from './Images/home/anime.jpeg';
+import painting6 from './Images/home/china.jpeg';
+import lady from './Images/home/lady.jpeg';
+import sketch from './Images/home/sketch.jpeg';
+import wp2 from './Images/home/Wp (2).jpeg';
+import wp3 from './Images/home/Wp (3).jpeg';
+import wp4 from './Images/home/Wp (4).jpeg';
+import wp5 from './Images/home/Wp (5).jpeg';
+import wp6 from './Images/home/Wp (6).jpeg';
+import wp7 from './Images/home/Wp (7).jpeg';
+import wp8 from './Images/home/Wp (8).jpeg';
+import wp9 from './Images/home/Wp (9).jpeg';
+import wp10 from './Images/home/Wp (10).jpeg';
+import wp1 from './Images/home/Wp (1).jpeg';
+import wp from './Images/home/Wp.jpeg';
+import wp11 from './Images/home/Wp (11).jpeg';
+import wp12 from './Images/home/Wp (12).jpeg';
+import wp13 from './Images/home/Wp (13).jpeg';
+import wp14 from './Images/home/Wp (14).jpeg';
+import wp15 from './Images/home/Wp (15).jpeg';
+ import wp16 from './Images/home/Wp (16).jpeg';
+import wp17 from './Images/home/Wp (17).jpeg';
+import wp18 from './Images/home/Wp (18).jpeg';
+import wp19 from './Images/home/Wp (19).jpeg';
+import wp20 from './Images/home/Wp (20).jpeg';
+import maraHuaSushant from './Images/home/maraHuaSushant.jpeg';
 
- export const PaintingsData = [
+ export const homePaintings = [
   {
     title: "Abstract Colors",
     img: painting1,

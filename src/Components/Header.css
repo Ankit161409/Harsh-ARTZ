@@ -1,4 +1,4 @@
-/* Desktop dropdown */
+/*  
 .main-nav {
   display: flex;
   gap: 24px;
@@ -17,48 +17,186 @@
   left: 0;
   min-width: 180px;
   
-  background: #0c0c0c;
+  background: #262525;
   border: 1px solid #141414;
   padding: 8px 0;
   display: none;
   z-index: 20;
 }
 .nav-item.open .dropdown {
+  background-color: rgb(64, 4, 4);
   display: block;
 }
 .dropdown-link {
   display: block;
   padding: 10px 14px;
-  color: #f1eaea;
+  color: #f6f2f2;
   text-decoration: none;
 }
 .dropdown-link:hover {
-  /* background: #998686; */
-  background:rgba(rgb(19, 19, 19), green, blue, 0.2);
+ 
+  background: rgb(244, 237, 237);
 
 }
+  */
 
-/* Mobile accordion styles */
+
+
+
+  /* =========================
+   Desktop Navigation Dropdown
+========================= */
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #0c0c0c;
+}
+
+.nav-item.has-dropdown {
+  position: relative;
+}
+
+/* Dropdown box */
+.nav-item .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+
+  background: #b5a9a9;
+  border: 1px solid #141414;
+  padding: 8px 0;
+
+  display: none;
+  z-index: 20;
+}
+
+/* Open dropdown */
+.nav-item.open .dropdown {
+  display: block;
+  background-color: rgb(186, 141, 240);
+}
+
+
+/* Dropdown links */
+.dropdown-link,
+.dropdown-link:visited,
+.dropdown-link:active {
+  display: block;
+  padding: 10px 14px;
+
+  color: #121212;
+  background: transparent;
+
+  text-decoration: none;
+}
+
+
+/* Hover effect */
+.dropdown-link:hover {
+  background: rgb(94, 75, 101);
+  color: #262525;
+}
+
+
+/* Current active page */
+.dropdown-link.active,
+.dropdown-link.current {
+  background: rgb(197, 178, 178);
+  color: #b56767;
+}
+
+
+/* Remove unwanted browser link colors */
+.nav-item a,
+.nav-item a:visited,
+.nav-item a:hover,
+.nav-item a:active {
+  text-decoration: none;
+}
+
+
+/* =========================
+   Mobile Accordion Styles
+========================= */
+
 .sidebar-accordion .accordion-trigger {
-    margin-top: 10px;
+  margin-top: 10px;
+
   width: 100%;
   text-align: center;
+
   background: none;
-  /* border: 0; */
+  border: 0;
+
   padding: 14px 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  color: #f6f2f2;
+  cursor: pointer;
 }
+
+
+/* Accordion arrow */
 .accordion-caret {
   margin-left: 10px;
   font-weight: 600;
 }
+
+
+/* Accordion content */
 .accordion-panel {
   overflow: hidden;
 }
-.sidebar-sublink {
+
+
+/* Mobile submenu links */
+.sidebar-sublink,
+.sidebar-sublink:visited,
+.sidebar-sublink:active {
   display: block;
+
   padding: 10px 0 10px 14px;
+
   text-decoration: none;
+
+  color: #f6f2f2;
+  background: transparent;
+}
+
+
+/* Mobile submenu hover */
+.sidebar-sublink:hover {
+  color: #262525;
+  background: rgb(226, 214, 214);
+}
+
+
+/* Mobile active link */
+.sidebar-sublink.active {
+  color: #f6f2f2;
+  background: rgb(182, 172, 172);
+}
+
+
+/* =========================
+   Prevent Browser Defaults
+========================= */
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus {
+  outline: none;
 }

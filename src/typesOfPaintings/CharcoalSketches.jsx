@@ -1,14 +1,13 @@
+
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-// import { homePaintings } from "../ArtGalleryData";
-// import { PaintingsData } from "../PaintingsData";
-import { Paintings } from "../ImportImages/PaintingsImport";
-
+import { Charcoal } from "../ImportImages/CharcoalImport.js";
+ 
 
 // import '../ArtGallery.css';
 
-const Painting = () => {
+  const Charcoals = () => {
   const navigate = useNavigate();
 
   const trimWords = (text = "", wordLimit = 15) => {
@@ -21,6 +20,7 @@ const Painting = () => {
  
   return (
     <div>
+    
       {/* Navbar */}
  
       {/* Gallery */}
@@ -35,7 +35,8 @@ const Painting = () => {
           },
         }}
       >
-        {Paintings.map((painting, index) => (
+         
+        {Charcoal.map((painting, index) => (
           <motion.div
             key={painting.id || index}
             className="art-card"
@@ -50,7 +51,7 @@ const Painting = () => {
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             // onClick={() => navigate(`/painting/${index}`)}
-                        onClick={() => navigate(`/painting/PaintingsImport/${index}`)}
+                        onClick={() => navigate(`/painting/CharcoalImport/${index}`)}
  
           >
             <div className="card-image-container">
@@ -96,7 +97,6 @@ const Painting = () => {
   );
 };
 
+
+ export default Charcoals;
  
-
-
-export default Painting;

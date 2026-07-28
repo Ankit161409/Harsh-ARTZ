@@ -58,17 +58,150 @@
 
 // export default PaintingDetails;
 
+// import React from "react";
+// import { useParams, useNavigate } from "react-router-dom";
+// import { homePaintings } from "../ArtGalleryData";
+// import { Paintings } from "../ImportImages/PaintingsImport";
+// import { Acrylic } from "../ImportImages/AcrylicImport";
+
+
+// import "./ArtGallery.css";
+// import { motion } from "framer-motion";
+
+// const PaintingDetails = () => {
+//   const { id } = useParams();
+//   const { apitype } = useParams();
+
+
+  
+//   const painting = homePaintings[id];
+//   const navigate = useNavigate();
+
+//   if (!painting) return <p>Painting not found</p>;
+
+//   // Animation variants
+//   const container = {
+//     hidden: {},
+//     visible: {
+//       transition: {
+//         staggerChildren: 0.3,
+//       },
+//     },
+//   };
+
+//   const item = {
+//     hidden: { opacity: 0, y: 40 },
+//     visible: { opacity: 1, y: 0 },
+//   };
+
+//   return (
+//     <motion.div
+//       className="container-fluid top"
+//       style={{ padding: "40px" }}
+//       variants={container}
+//       initial="hidden"
+//       animate="visible"
+//     >
+//       <div className="row">
+        
+//         {/* Animated Image */}
+//         <div className="col-md-5 d-flex justify-content-center">
+//           <motion.img
+//             src={painting.img}
+//             alt={painting.title}
+//             variants={item}
+//             transition={{ duration: 0.8 }}
+//             style={{
+//               maxWidth: "600px",
+//               width: "100%",
+//               borderRadius: "15px",
+//             }}
+//           />
+//         </div>
+
+//         {/* Animated Text Section */}
+//         <div className="col-md-7">
+          
+//           <motion.h1
+//             className="text-center lefts"
+//             variants={item}
+//             transition={{ duration: 0.8 }}
+//           >
+//             {painting.title}
+//           </motion.h1>
+
+//           <motion.p
+//             style={{ marginTop: "20px", fontSize: "1.1rem" }}
+//             variants={item}
+//           >
+//             {painting.description}
+//           </motion.p>
+
+//           {/* Animated Button */}
+//           <motion.button
+//             variants={item}
+//             whileHover={{ scale: 1.1 }}
+//             whileTap={{ scale: 0.95 }}
+//             onClick={() => navigate("/art-gallery")}
+//             style={{
+//               marginTop: "30px",
+//               padding: "10px 20px",
+//               backgroundColor: "#6c63ff",
+//               color: "white",
+//               border: "none",
+//               borderRadius: "8px",
+//               cursor: "pointer",
+//             }}
+//           >
+//             Back to Gallery
+//           </motion.button>
+
+//         </div>
+//       </div>
+//     </motion.div>
+//   );
+// };
+
+// export default PaintingDetails;
+
+
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { homePaintings } from "../ArtGalleryData";
+import { Paintings } from "../ImportImages/PaintingsImport";
+import  {Charcoal}  from "../ImportImages/CharcoalImport.js";
+
+// import { Acrylic } from "../ImportImages/AcrylicImport";
+
 import "./ArtGallery.css";
 import { motion } from "framer-motion";
 
 const PaintingDetails = () => {
-  const { id } = useParams();
-  const painting = homePaintings[id];
+  const { apiType, id } = useParams();
   const navigate = useNavigate();
 
+
+   
+  let painting;
+
+  switch (apiType) {
+    case "home":
+      painting = homePaintings[Number(id)];
+      break;
+
+    case "PaintingsImport":
+      painting = Paintings[Number(id)];
+      break;
+
+    case "CharcoalImport":
+      painting = Charcoal[Number(id)];
+      break;
+
+    default:
+      painting = null;
+  }
+
+  
   if (!painting) return <p>Painting not found</p>;
 
   // Animation variants
@@ -95,7 +228,7 @@ const PaintingDetails = () => {
       animate="visible"
     >
       <div className="row">
-        
+
         {/* Animated Image */}
         <div className="col-md-5 d-flex justify-content-center">
           <motion.img
@@ -113,7 +246,7 @@ const PaintingDetails = () => {
 
         {/* Animated Text Section */}
         <div className="col-md-7">
-          
+
           <motion.h1
             className="text-center lefts"
             variants={item}
@@ -129,12 +262,11 @@ const PaintingDetails = () => {
             {painting.description}
           </motion.p>
 
-          {/* Animated Button */}
           <motion.button
             variants={item}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => navigate("/art-gallery")}
+            onClick={() => navigate(-1)}
             style={{
               marginTop: "30px",
               padding: "10px 20px",

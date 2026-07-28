@@ -1,13 +1,13 @@
-import painting1 from './Images/home-painting-1.webp';
-import painting2 from './Images/home-painting-2.webp';
-import painting3 from './Images/home-painting-3.webp';
-import painting4 from './Images/home-painting-4.webp';
-import painting5 from './Images/anime.jpeg';
-import painting6 from './Images/china.jpeg';
-import lady from './Images/lady.jpeg';
-import sketch from './Images/sketch.jpeg';
-import maraHuaSushant from './Images/maraHuaSushant.jpeg';
-import rupe from './Images/150rupe.jpeg';
+import painting1 from './Images/home/home-painting-1.webp';
+import painting2 from './Images/home/home-painting-2.webp';
+import painting3 from './Images/home/home-painting-3.webp';
+import painting4 from './Images/home/home-painting-4.webp';
+import painting5 from './Images/home/anime.jpeg';
+import painting6 from './Images/home/china.jpeg';
+import lady from './Images/home/lady.jpeg';
+import sketch from './Images/home/sketch.jpeg';
+import maraHuaSushant from './Images/home/maraHuaSushant.jpeg';
+import rupe from './Images/home/150rupe.jpeg';
 
 export const homePaintings=[
     { title: "fuck", img: painting1 },
