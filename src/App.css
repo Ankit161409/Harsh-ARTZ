@@ -286,7 +286,7 @@ body{
 }
 
 .art-grid {
-  max-width: 2000px;
+  max-width:2000px;
   height: 800px;
  border: 1px solid red;
   /* margin: auto; */
