@@ -8,7 +8,7 @@ import Hero from "../Components/Hero";
 import AboutArtist from "../Components/AboutArtist";
 import  "./Home.css";
 /**DATA IMPORT */
-import { homePaintings } from "../Home";
+// import { homePaintings } from "../Home";
 import home1 from '../Images/mainpage/img2.jpeg';
 import home2 from '../Images/mainpage/img1.jpeg';
 import home3 from '../Images/mainpage/img3.jpeg';
