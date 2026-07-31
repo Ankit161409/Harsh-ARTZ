@@ -45,7 +45,7 @@ const ArtGallery = () => {
               boxShadow: "0 35px 60px -20px rgba(0,0,0,0.4)",
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            onClick={() => navigate(`/painting/${index}`)}
+            onClick={() => navigate(`/painting/artgallery/${index}`)}
           >
             <div className="card-image-container">
               <img

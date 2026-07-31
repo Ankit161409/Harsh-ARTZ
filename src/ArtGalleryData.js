@@ -1,188 +1,130 @@
-import painting1 from './Images/home/home-painting-1.webp';
-import painting2 from './Images/home/home-painting-2.webp';
-import painting3 from './Images/home/home-painting-3.webp';
-import painting4 from './Images/home/home-painting-4.webp';
-import painting5 from './Images/home/anime.jpeg';
-import painting6 from './Images/home/china.jpeg';
-import lady from './Images/home/lady.jpeg';
-import sketch from './Images/home/sketch.jpeg';
-import wp2 from './Images/home/Wp (2).jpeg';
-import wp3 from './Images/home/Wp (3).jpeg';
-import wp4 from './Images/home/Wp (4).jpeg';
-import wp5 from './Images/home/Wp (5).jpeg';
-import wp6 from './Images/home/Wp (6).jpeg';
-import wp7 from './Images/home/Wp (7).jpeg';
-import wp8 from './Images/home/Wp (8).jpeg';
-import wp9 from './Images/home/Wp (9).jpeg';
-import wp10 from './Images/home/Wp (10).jpeg';
-import wp1 from './Images/home/Wp (1).jpeg';
-import wp from './Images/home/Wp.jpeg';
-import wp11 from './Images/home/Wp (11).jpeg';
-import wp12 from './Images/home/Wp (12).jpeg';
-import wp13 from './Images/home/Wp (13).jpeg';
-import wp14 from './Images/home/Wp (14).jpeg';
-import wp15 from './Images/home/Wp (15).jpeg';
- import wp16 from './Images/home/Wp (16).jpeg';
-import wp17 from './Images/home/Wp (17).jpeg';
-import wp18 from './Images/home/Wp (18).jpeg';
-import wp19 from './Images/home/Wp (19).jpeg';
-import wp20 from './Images/home/Wp (20).jpeg';
-import maraHuaSushant from './Images/home/maraHuaSushant.jpeg';
+import home1 from './Images/home/image1001.jpeg';
+import home2 from './Images/home/image1002.jpeg';
+import home3 from './Images/home/image1003.jpeg';
+import home4 from './Images/home/image1004.jpeg';
+import home5 from './Images/home/image1005.jpeg';
+import home6 from './Images/home/image1006.jpeg';
+import home7 from './Images/home/image1007.jpeg';
+import home8 from './Images/home/image1008.jpeg';
+import home9 from './Images/home/image1009.jpeg';
+import home10 from './Images/home/image1010.jpeg';
+import home11 from './Images/home/image1011.jpeg';
+import home12 from './Images/home/image1012.jpeg';
+import home13 from './Images/home/image1013.jpeg';
+import home14 from './Images/home/image1014.jpeg';
+import home15 from './Images/home/image1015.jpeg';
+import home16 from './Images/home/image1016.jpeg';
+import home17 from './Images/home/image1017.jpeg';
+import home18 from './Images/home/image1018.jpeg';
+import home19 from './Images/home/image1019.jpeg';
+import home20 from './Images/home/image1020.jpeg';
+import home21 from './Images/home/image1021.jpeg';
+import home22 from './Images/home/image1022.jpeg';
+import home23 from './Images/home/image1023.jpeg';
+import home24 from './Images/home/image1024.jpeg';
+import home25 from './Images/home/image1025.jpeg';
+import home26 from './Images/home/image1026.jpeg';
+import home27 from './Images/home/image1027.jpeg';
+import home28 from './Images/home/image1028.jpeg';
+import home29 from './Images/home/image1029.jpeg';
+import home30 from './Images/home/image1030.jpeg';
+import home31 from './Images/home/image1031.jpeg';
+import home32 from './Images/home/image1032.jpeg';
+import home33 from './Images/home/image1033.jpeg';
+import home34 from './Images/home/image1034.jpeg';
+import home35 from './Images/home/image1035.jpeg';
+import home36 from './Images/home/image1036.jpeg';
+import home37 from './Images/home/image1037.jpeg';
+import home38 from './Images/home/image1038.jpeg';
+import home39 from './Images/home/image1039.jpeg';
+import home40 from './Images/home/image1040.jpeg';
+import home41 from './Images/home/image1041.jpeg';
+import home42 from './Images/home/image1042.jpeg';
+import home43 from './Images/home/image1043.jpeg';
+import home44 from './Images/home/image1044.jpeg';
+import home45 from './Images/home/image1045.jpeg';
+import home46 from './Images/home/image1046.jpeg';
+import home47 from './Images/home/image1047.jpeg';
+import home48 from './Images/home/image1048.jpeg';
+import home49 from './Images/home/image1049.jpeg';
+import home50 from './Images/home/image1050.jpeg';
+import home51 from './Images/home/image1051.jpeg';
+import home52 from './Images/home/image1052.jpeg';
+import home53 from './Images/home/image1053.jpeg';
+import home54 from './Images/home/image1054.jpeg';
+import home55 from './Images/home/image1055.jpeg';
+import home56 from './Images/home/image1056.jpeg';
+import home57 from './Images/home/image1057.jpeg';
+import home58 from './Images/home/image1058.jpeg';
+import home59 from './Images/home/image1059.jpeg';
+import home60 from './Images/home/image1060.jpeg';
+import home61 from './Images/home/image1061.jpeg';
+import home62 from './Images/home/image1062.jpeg';
+ 
 
- export const homePaintings = [
-  {
-    title: "Abstract Colors",
-    img: painting1,
-    description: "A vibrant abstract painting full of dynamic colors and energy  dsdc ds fsfd sc sf srf sr csr cs f rsrf sr frs f srf rsscrsc rs csr c sc ."
-  },
-  {
-    title: "Landscape",
-    img: painting2,
-    description: "A serene landscape depicting mountains and rivers in natural beauty."
-  },
-  {
-    title: "Portrait",
-    img: painting3,
-    description: "A detailed portrait capturing emotion and personality."
-  },
-  {
-    title: "The Fruits",
-    img: painting4,
-    description: "A still-life painting of fresh fruits with realistic texture and color."
-  },
-  {
-    title: "Anime",
-    img: painting5,
-    description: "Anime-inspired artwork with bright colors and expressive characters."
-  },
-  {
-    title: "anime",
-    img: painting6,
-    description: "A romantic depiction of birds perched together in a tranquil setting."
-  },
-  {
-    title: "Digital Art",
-    img: lady,
-    description: "A modern digital painting with smooth gradients and vibrant tones."
-  },
-  {
-    title: "Charcoal & Graphite",
-    img: sketch,
-    description: "A monochromatic sketch using charcoal and graphite for depth and shading."
-  },
-  {
-    title: "mara hua sushant",
-    img: maraHuaSushant,
-    description: "A monochromatic sketch using charcoal and graphite for depth and shading."
-  }
-  , 
-  {
-    title: "Abstract Colors",
-    img: wp2,
-    description: "A vibrant abstract painting full of dynamic colors and energy  dsdc ds fsfd sc sf srf sr csr cs f rsrf sr frs f srf rsscrsc rs csr c sc ."
-  },
-  {
-    title: "Landscape",
-    img: wp3,
-    description: "A serene landscape depicting mountains and rivers in natural beauty."
-  },
-  {
-    title: "Portrait",
-    img: wp4,
-    description: "A detailed portrait capturing emotion and personality."
-  },
-  {
-    title: "The Fruits",
-    img: wp5,
-    description: "A still-life painting of fresh fruits with realistic texture and color."
-  },
-  {
-    title: "Anime",
-    img: wp6,
-    description: "Anime-inspired artwork with bright colors and expressive characters."
-  },
-  {
-    title: "anime",
-    img: wp7,
-    description: "A romantic depiction of birds perched together in a tranquil setting."
-  },
-  {
-    title: "Digital Art",
-    img: wp8,
-    description: "A modern digital painting with smooth gradients and vibrant tones."
-  },
-  {
-    title: "Charcoal & Graphite",
-    img: wp9,
-    description: "A monochromatic sketch using charcoal and graphite for depth and shading."
-  },
-  {
-    title: "mara hua sushant",
-    img: wp10,
-    description: "A monochromatic sketch using charcoal and graphite for depth and shading."
-  },
-
-  // New items
-  {
-    title: "Sunset Scene",
-    img: wp11,
-    description: "A breathtaking sunset scene blending warm and cool colors."
-  },
-  {
-    title: "Cityscape",
-    img: wp12,
-    description: "A detailed cityscape capturing the essence of urban life."
-  },
-  {
-    title: "Fantasy World",
-    img: wp13,
-    description: "A fantastical painting with imaginative creatures and landscapes."
-  },
-  {
-    title: "Floral Art",
-    img: wp14,
-    description: "A delicate floral painting highlighting nature's beauty."
-  },
-  {
-    title: "Minimalist Sketch",
-    img: wp15,
-    description: "A minimalist sketch focusing on clean lines and simplicity."
-  }, {
-    title: "mara hua sushant",
-    img: wp16,
-    description: "A monochromatic sketch using charcoal and graphite for depth and shading."
-  },
-
-  // New items
-  {
-    title: "Sunset Scene",
-    img: wp17,
-    description: "A breathtaking sunset scene blending warm and cool colors."
-  },
-  {
-    title: "Cityscape",
-    img: wp18,
-    description: "A detailed cityscape capturing the essence of urban life."
-  },
-  {
-    title: "Fantasy World",
-    img: wp19,
-    description: "A fantastical painting with imaginative creatures and landscapes."
-  },
-  {
-    title: "Floral Art",
-    img: wp20,
-    description: "A delicate floral painting highlighting nature's beauty."
-  },
-  {
-    title: "Minimalist Sketch",
-    img: wp,
-    description: "A minimalist sketch focusing on clean lines and simplicity."
-  },
-   {
-    title: "Minimalist Sketch",
-    img: wp1,
-    description: "A minimalist sketch focusing on clean lines and simplicity."
-  }
-
+export const homePaintings=[
+   
+  { title: "Home 1", img: home1 },
+  { title: "Home 2", img: home2 },
+  { title: "Home 3", img: home3 },
+  { title: "Home 4", img: home4 },
+  { title: "Home 5", img: home5 },
+  { title: "Home 6", img: home6 },
+  { title: "Home 7", img: home7 },
+  { title: "Home 8", img: home8 },
+  { title: "Home 9", img: home9 },
+  { title: "Home 10", img: home10 },
+  { title: "Home 11", img: home11 },
+  { title: "Home 12", img: home12 },
+  { title: "Home 13", img: home13 },
+  { title: "Home 14", img: home14 },
+  { title: "Home 15", img: home15 },
+  { title: "Home 16", img: home16 },
+  { title: "Home 17", img: home17 },
+  { title: "Home 18", img: home18 },
+  { title: "Home 19", img: home19 },
+  { title: "Home 20", img: home20 },
+  { title: "Home 21", img: home21 },
+  { title: "Home 22", img: home22 },
+  { title: "Home 23", img: home23 },
+  { title: "Home 24", img: home24 },
+  { title: "Home 25", img: home25 },
+  { title: "Home 26", img: home26 },
+  { title: "Home 27", img: home27 },
+  { title: "Home 28", img: home28 },
+  { title: "Home 29", img: home29 },
+  { title: "Home 30", img: home30 },
+  { title: "Home 31", img: home31 },
+  { title: "Home 32", img: home32 },
+  { title: "Home 33", img: home33 },
+  { title: "Home 34", img: home34 },
+  { title: "Home 35", img: home35 },
+  { title: "Home 36", img: home36 },
+  { title: "Home 37", img: home37 },
+  { title: "Home 38", img: home38 },
+  { title: "Home 39", img: home39 },
+  { title: "Home 40", img: home40 },
+  { title: "Home 41", img: home41 },
+  { title: "Home 42", img: home42 },
+  { title: "Home 43", img: home43 },
+  { title: "Home 44", img: home44 },
+  { title: "Home 45", img: home45 },
+  { title: "Home 46", img: home46 },
+  { title: "Home 47", img: home47 },
+  { title: "Home 48", img: home48 },
+  { title: "Home 49", img: home49 },
+  { title: "Home 50", img: home50 },
+  { title: "Home 51", img: home51 },
+  { title: "Home 52", img: home52 },
+  { title: "Home 53", img: home53 },
+  { title: "Home 54", img: home54 },
+  { title: "Home 55", img: home55 },
+  { title: "Home 56", img: home56 },
+  { title: "Home 57", img: home57 },
+  { title: "Home 58", img: home58 },
+  { title: "Home 59", img: home59 },
+  { title: "Home 60", img: home60 },
+  { title: "Home 61", img: home61 },
+  { title: "Home 62", img: home62 },
+ 
 ];

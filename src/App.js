@@ -28,7 +28,6 @@ function App() {
           <Route path="/art-gallery" element={<ArtGallery />} />
           <Route path="/paintings" element={<Paintings />} />
           <Route path="/charcoal-sketches" element={<Charcoals />} />
-
           <Route path="/shop" element={<Shop />} />
           <Route path="/lets-connect" element={<LetsConnect />} />
           <Route path="/painting/:apiType/:id"  element={<PaintingDetails />} />

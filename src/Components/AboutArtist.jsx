@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 /**IMAGE IMPORT */
-import ArtistImg from "../Images/home/Harsh.jpeg";
+import ArtistImg from "../Images/additionalImages/Harsh.jpeg";
 
 const AboutArtist = () => {
   return (

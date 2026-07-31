@@ -3,7 +3,7 @@ import charcoal2 from '../Images/CharcoalSketches/charcoal (2).jpeg';
  import charcoal4 from '../Images/CharcoalSketches/charcoal (4).jpeg';
 import charcoal5 from '../Images/CharcoalSketches/charcoal (5).jpeg';
 import charcoal6 from '../Images/CharcoalSketches/charcoal (6).jpeg';
-// import charcoal7 from '../Images/CharcoalSketches/charcoal (7).jpeg';
+import charcoal3 from '../Images/CharcoalSketches/charcoal (3).jpeg';
 import charcoal8 from '../Images/CharcoalSketches/charcoal (8).jpeg';
 import charcoal9 from '../Images/CharcoalSketches/charcoal (9).jpeg';
 import charcoal10 from '../Images/CharcoalSketches/charcoal (10).jpeg';
@@ -41,11 +41,11 @@ export const Charcoal = [
     img: charcoal6,
     description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
   },
-  // {
-  //   title: "girls",
-  //   img: charcoal7,
-  //   description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
-  // },
+  {
+    title: "girls",
+    img: charcoal3,
+    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+  },
   {
     title: "girls",
     img: charcoal8,

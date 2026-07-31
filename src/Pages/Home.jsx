@@ -1,4 +1,4 @@
-/**CORE LIBRARIES IMPORT */
+  /**CORE LIBRARIES IMPORT */
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
@@ -8,14 +8,14 @@ import Hero from "../Components/Hero";
 import AboutArtist from "../Components/AboutArtist";
 import  "./Home.css";
 /**DATA IMPORT */
-import { homePaintings } from "../Data";
+import { homePaintings } from "../Home";
 
 
 const Home=()=>{
     return(
         <>
         {/**HERO SECTION */}
-        <Hero />
+        {/* <Hero /> */}
 
         {/**AWARD SECTION WITH PAINTING IMAGES GRID */}
  <section className="art-showcase">
@@ -127,7 +127,7 @@ const Home=()=>{
 </section>
 
     {/**ABOUT THE ARTIST SECTION */}
-    <AboutArtist />
+    {/* <AboutArtist /> */}
         </>
     )
 }

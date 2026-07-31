@@ -196,6 +196,12 @@ const PaintingDetails = () => {
     case "CharcoalImport":
       painting = Charcoal[Number(id)];
       break;
+ case "artgallery":
+      painting = homePaintings[Number(id)];
+      break;
+
+  
+      
 
     default:
       painting = null;
@@ -243,7 +249,7 @@ const PaintingDetails = () => {
             }}
           />
         </div>
-
+ 
         {/* Animated Text Section */}
         <div className="col-md-7">
 
