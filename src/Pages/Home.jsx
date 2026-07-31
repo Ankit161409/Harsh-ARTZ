@@ -15,7 +15,7 @@ const Home=()=>{
     return(
         <>
         {/**HERO SECTION */}
-        {/* <Hero /> */}
+        <Hero />
 
         {/**AWARD SECTION WITH PAINTING IMAGES GRID */}
  <section className="art-showcase">
@@ -127,7 +127,7 @@ const Home=()=>{
 </section>
 
     {/**ABOUT THE ARTIST SECTION */}
-    {/* <AboutArtist /> */}
+    <AboutArtist />
         </>
     )
 }
