@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-// import { homePaintings } from "../ArtGalleryData";
-import { PaintingsData } from "../PaintingsData";
+import { digitalArt } from '../ImportImages/DigitalImport';
+ 
 
 // import '../ArtGallery.css';
 
-const Paintings = () => {
+const Digital = () => {
   const navigate = useNavigate();
 
   const trimWords = (text = "", wordLimit = 15) => {
@@ -18,7 +18,34 @@ const Paintings = () => {
  
  
   return (
-    <div>
+    <div className="background">
+       <motion.div
+        
+              className="hero-content  "
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    staggerChildren: 0.25,
+                  },
+                },
+              }}
+            >
+               <motion.h1
+               className="side"
+               style={{ color: "black" }}
+                        variants={{
+                          hidden: { y: 40, opacity: 0 },
+                          visible: { y: 0, opacity: 1 },
+                        }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                      >
+                      Digital Arts
+                       
+                      </motion.h1>
+                    </motion.div>
       {/* Navbar */}
  
       {/* Gallery */}
@@ -33,7 +60,7 @@ const Paintings = () => {
           },
         }}
       >
-        {PaintingsData.map((painting, index) => (
+        {digitalArt.map((painting, index) => (
           <motion.div
             key={painting.id || index}
             className="art-card"
@@ -47,7 +74,7 @@ const Paintings = () => {
               boxShadow: "0 35px 60px -20px rgba(0,0,0,0.4)",
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            onClick={() => navigate(`/painting/${index}`)}
+            onClick={() => navigate(`/painting/digital/${index}`)}
           >
             <div className="card-image-container">
               <img
@@ -92,7 +119,6 @@ const Paintings = () => {
   );
 };
 
+export default Digital;
+
  
-
-
-export default Paintings;

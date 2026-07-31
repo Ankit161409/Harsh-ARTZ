@@ -13,6 +13,7 @@ import PaintingDetails from './Pages/PaintingDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Paintings from './typesOfPaintings/Paintings';
 import Charcoals from './typesOfPaintings/CharcoalSketches';
+import Digital from './typesOfPaintings/DigitalArt';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/charcoal-sketches" element={<Charcoals />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/lets-connect" element={<LetsConnect />} />
+          <Route path="/digital-art" element={<Digital />} />
           <Route path="/painting/:apiType/:id"  element={<PaintingDetails />} />
         </Routes>
         <Footer />

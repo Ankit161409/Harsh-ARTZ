@@ -19,8 +19,34 @@ import { Charcoal } from "../ImportImages/CharcoalImport.js";
  
  
   return (
-    <div>
-    
+    <div className="background">
+     <motion.div
+            
+                  className="hero-content"
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    hidden: {},
+                    visible: {
+                      transition: {
+                        staggerChildren: 0.25,
+                      },
+                    },
+                  }}
+                >
+                   <motion.h1
+                   className="side"
+                   style={{ color: "black" }}
+                            variants={{
+                              hidden: { y: 40, opacity: 0 },
+                              visible: { y: 0, opacity: 1 },
+                            }}
+                            transition={{ duration: 1, ease: "easeOut" }}
+                          >
+                          Charcoal Arts
+                           
+                          </motion.h1>
+                        </motion.div>
       {/* Navbar */}
  
       {/* Gallery */}

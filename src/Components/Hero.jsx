@@ -29,6 +29,7 @@ const Hero = () => {
         }}
       >
         <motion.p
+        style={{ color: "#FFD700" }}
           variants={{
             hidden: { y: 30, opacity: 0 },
             visible: { y: 0, opacity: 1 },

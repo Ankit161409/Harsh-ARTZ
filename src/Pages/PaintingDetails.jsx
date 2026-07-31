@@ -170,6 +170,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { homePaintings } from "../ArtGalleryData";
 import { Paintings } from "../ImportImages/PaintingsImport";
 import  {Charcoal}  from "../ImportImages/CharcoalImport.js";
+import  {digitalArt}  from "../ImportImages/DigitalImport.js";
+
 
 // import { Acrylic } from "../ImportImages/AcrylicImport";
 
@@ -196,8 +198,13 @@ const PaintingDetails = () => {
     case "CharcoalImport":
       painting = Charcoal[Number(id)];
       break;
- case "artgallery":
+ 
+      case "artgallery":
       painting = homePaintings[Number(id)];
+      break;
+
+       case "digital":
+      painting = digitalArt[Number(id)];
       break;
 
   
