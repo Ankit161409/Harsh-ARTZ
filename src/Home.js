@@ -1,16 +1,18 @@
-// import home1 from './Images/home/image1022.jpeg';
-// import home2 from './Images/home/image1061.jpeg';
-// import home3 from './Images/home/image66.jpeg';
+ 
+import home1 from './Images/mainpage/img2.jpeg';
+
+import home2 from './Images/mainpage/img1.jpeg';
+ 
 
  
 
-// export const homePaintings=[
+export const homePaintings=[
    
   
-//   { title: "Maa kali", img: home1 },
-//   { title: "Mixed media", img: home2 },
-//   { title: "Mixed media", img: home3 },
+  { title: "Maa kali", img: home1 },
+  { title: "Mixed media", img: home2 },
+  // { title: "Mixed media", img: home3 },
 
    
  
-// ];
+];
