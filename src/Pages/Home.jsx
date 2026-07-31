@@ -9,6 +9,10 @@ import AboutArtist from "../Components/AboutArtist";
 import  "./Home.css";
 /**DATA IMPORT */
 import { homePaintings } from "../Home";
+import home1 from '../Images/mainpage/img2.jpeg';
+import home2 from '../Images/mainpage/img1.jpeg';
+import home3 from '../Images/mainpage/img3.jpeg';
+
 
 
 const Home=()=>{
@@ -99,7 +103,7 @@ const Home=()=>{
       },
     }}
   >
-    <div className="art-grid ">
+    {/* <div className="art-grid ">
       {homePaintings.map((item, i) => (
         <motion.div
           className="flip-card"
@@ -121,7 +125,52 @@ const Home=()=>{
           </div>
         </motion.div>
       ))}
-    </div>
+    </div> */}
+    <div className="art-grid">
+
+  {/* Row 1 */}
+  <div className="art-row">
+    <div
+      className="flip-front"
+      style={{ backgroundImage: `url(${home1})` }}
+    ></div>
+
+    <div
+      className="flip-front"
+      style={{ backgroundImage: `url(${home2})` }}
+    ></div>
+  </div>
+
+  {/* Row 2 */}
+  <div className="art-new">
+    <div
+      className="art-new"
+      style={{ backgroundImage: `url(${home3})` }}
+    ></div>
+  </div>
+
+  {/* Row 3 */}
+  <div className="art-row">
+    <div
+      className="flip-front"
+      style={{ backgroundImage: `url(${home2})` }}
+    ></div>
+
+    <div
+      className="flip-front"
+      style={{ backgroundImage: `url(${home1})` }}
+    ></div>
+  </div>
+
+  {/* Row 4 */}
+  <div className="art-row">
+    <div
+      className="flip-front"
+      style={{ backgroundImage: `url(${home2})` }}
+    ></div>
+  </div>
+
+</div>
   </motion.div>
 
 </section>
@@ -133,3 +182,52 @@ const Home=()=>{
 }
 
 export default Home;
+
+
+
+// copy in App.css 
+// .art-grid {
+//   max-width:2000px;
+//   height:2000px;
+//   /* height: auto; */
+//  border: 1px solid red;
+//   /* margin: auto; */
+//   display: grid;
+//   grid-template-columns: repeat(2, 2fr);
+//   gap: 0px;
+//    /* padding: 0px 40px 0px; */
+// }
+
+// .flip-card {
+//   perspective: 1200px;
+//   width: 100%;
+//   height:900px;
+//   border: 1px solid red;
+ 
+// }
+
+// .flip-inner {
+//   width: 800px;
+//   height:800px;
+//   position: relative;
+//   transform-style: preserve-3d;
+//   transition: transform 0.7s ease;
+//   border: 1px solid rgb(0, 110, 255);
+//    background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+  
+
+// }
+
+// .flip-card:hover .flip-inner {
+//   /* transform: rotateX(180deg); */
+// }
+
+// .flip-front {
+//   position: absolute;
+//   inset: 0;
+//   background-size: cover;
+//   background-position: center;
+//   backface-visibility: hidden;
+// }

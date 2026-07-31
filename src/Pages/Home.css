@@ -2,4 +2,29 @@
 {
 image-resolution: calc();
 } */
- 
+ .art-grid{
+    /* display: flex; */
+    flex-direction: column;
+    gap: 25px;
+}
+
+.art-row{
+    display: flex;
+    /* gap: 20px; */
+    
+}
+
+.flip-front{
+    width: 900px;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 12px; */
+}
+.art-new
+{
+width: 1700px;
+    height: 900px;
+     background-size: cover;
+    background-position: center;
+}
