@@ -65,7 +65,7 @@ export const homePaintings=[
   { title: "Home 15", img: home15 },
   { title: "Home 16", img: home16 },
   { title: "Home 17", img: home17 },
-  { title: "Home 18", img: home18 },
+  
   { title: "Home 19", img: home19 },
   { title: "Home 20", img: home20 },
   { title: "Home 21", img: home21 },
@@ -94,6 +94,7 @@ export const homePaintings=[
   { title: "Home 44", img: home44 },
   { title: "Home 45", img: home45 },
   { title: "Home 46", img: home46 },
+  { title: "Home 18", img: home18 },
   // { title: "Home 47", img: home47 },
   // { title: "Home 48", img: home48 },
   // { title: "Home 49", img: home49 },
