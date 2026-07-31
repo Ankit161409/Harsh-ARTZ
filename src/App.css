@@ -201,10 +201,7 @@ body{
    /* background-image: url("./Images/home/img\ \(30\).jpeg");  */
     
       background-image: url("https://picsum.photos/1920/1080"); 
-
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+ 
 }
 .hero-content {
   position: relative;
@@ -231,9 +228,13 @@ body{
 }
 .side
 {
+
   margin-top:100px;
   margin-left: 700px;
   margin-bottom: 0px;
+       font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .hero-content p {
   font-size: clamp(40px, 2vw, 22px);
