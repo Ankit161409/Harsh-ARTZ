@@ -287,7 +287,7 @@ body{
 
 .art-grid {
   max-width:2000px;
-  height: 800px;
+  height: 900px;
  border: 1px solid red;
   /* margin: auto; */
   display: grid;
@@ -306,11 +306,11 @@ body{
 
 .flip-inner {
   width: 700px;
-  height: 800px;
+  height:900px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.7s ease;
-  border: 1px solid rgb(0, 255, 8);
+  border: 1px solid rgb(0, 110, 255);
 
 }
 
