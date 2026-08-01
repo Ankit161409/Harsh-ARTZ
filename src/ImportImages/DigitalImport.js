@@ -70,8 +70,6 @@ export const digitalArt =
 
   { title: "Maa kali", img: img1, description: "hello", price: "20000 rupees" },
   { title: "Artwork 2", img: img2, description: "hello", price: "20000 rupees" },
-//   { title: "Artwork 3", img: img3, description: "hello", price: "20000 rupees" },
-//   { title: "Artwork 4", img: img4, description: "hello", price: "20000 rupees" },
  
   { title: "Artwork 10", img: img10, description: "hello", price: "20000 rupees" },
   { title: "Artwork 11", img: img11, description: "hello", price: "20000 rupees" },
