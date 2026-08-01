@@ -1,6 +1,6 @@
 import charcoal1 from '../Images/CharcoalSketches/charcoal (1).jpeg';
 import charcoal2 from '../Images/CharcoalSketches/charcoal (2).jpeg';
- import charcoal4 from '../Images/CharcoalSketches/charcoal (4).jpeg';
+import charcoal4 from '../Images/CharcoalSketches/charcoal (4).jpeg';
 import charcoal5 from '../Images/CharcoalSketches/charcoal (5).jpeg';
 import charcoal6 from '../Images/CharcoalSketches/charcoal (6).jpeg';
 import charcoal3 from '../Images/CharcoalSketches/charcoal (3).jpeg';
@@ -16,79 +16,80 @@ import charcoal16 from '../Images/CharcoalSketches/charcoal (16).jpeg';
 
 export const Charcoal = [
   {
-    title: "girls",
+    title: "Whispers of Metamorphosis",
     img: charcoal1,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: "A hyper-realistic graphite portrait capturing the quiet beauty of transformation. The butterflies symbolize growth and freedom, while the expressive eyes, natural curls, and delicate freckles celebrate individuality, vulnerability, and inner strength."
   },
   {
-    title: "girls",
+    title: "Sullivan barrier ",
     img: charcoal2,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: "A surreal graphite artwork revealing an eye hidden beneath layers of cracked stone and exposed textures. It symbolizes resilience, concealed emotions, and the unseen strength that endures despite the scars left by time and experience.."
   },
-  
+
   {
-    title: "girls",
+    title: "Mother Teresa",
     img: charcoal4,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: "A graphite portrait of Mother Teresa, honoring her unwavering compassion, humility, and selfless service. Through delicate shading and fine details, the artwork reflects the enduring legacy of love, kindness, and hope that continues to inspire the world."
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal5,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: "A beautiful portrait of a girl who loves peacocks and nature"
   },
   {
-    title: "girls",
+    title: "Sharing thirst",
     img: charcoal6,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: "A graphite artwork capturing two birds sharing a quiet moment at a flowing fountain, surrounded by lush foliage. The composition celebrates the serenity, balance, and simple beauty of nature, reminding us that life's most peaceful moments are often found in the smallest of scenes., ."
   },
   {
-    title: "girls",
+    title: "Light within",
     img: charcoal3,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: "A graphite portrait exploring the interplay of light, shadow, and identity. The patterned illumination and expressive gaze symbolize self-discovery, reminding us that even in darkness, our inner light continues to shine.."
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal8,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal9,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal10,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal11,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal12,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal13,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal14,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal15,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   },
   {
-    title: "girls",
+    title: "Commisioned work",
     img: charcoal16,
-    description: "A beautiful image of a girl, a watch, and Maa Kali representing time, strength, and devotion."
+    description: " "
   }
+
 ];

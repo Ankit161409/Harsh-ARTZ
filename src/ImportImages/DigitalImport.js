@@ -1,7 +1,5 @@
 import img1 from '../Images/DigitalArt/image1.png';
 import img2 from '../Images/DigitalArt/image2.jpeg';
-// import img3 from '../Images/DigitalArt/image3.png';
-// import img4 from '../Images/DigitalArt/image4.png';
 import img10 from '../Images/DigitalArt/image10.jpeg';
 import img11 from '../Images/DigitalArt/image11.jpeg';
 import img12 from '../Images/DigitalArt/image12.jpeg';
@@ -70,7 +68,6 @@ export const digitalArt =
 
   { title: "Maa kali", img: img1, description: "hello", price: "20000 rupees" },
   { title: "Artwork 2", img: img2, description: "hello", price: "20000 rupees" },
- 
   { title: "Artwork 10", img: img10, description: "hello", price: "20000 rupees" },
   { title: "Artwork 11", img: img11, description: "hello", price: "20000 rupees" },
   { title: "Artwork 12", img: img12, description: "hello", price: "20000 rupees" },
@@ -100,7 +97,6 @@ export const digitalArt =
   { title: "Artwork 36", img: img36, description: "hello", price: "20000 rupees" },
   { title: "Artwork 37", img: img37, description: "hello", price: "20000 rupees" },
   { title: "Artwork 38", img: img38, description: "hello", price: "20000 rupees" },
-//   { title: "Artwork 39", img: img39, description: "hello", price: "20000 rupees" },
   { title: "Artwork 40", img: img40, description: "hello", price: "20000 rupees" },
   { title: "Artwork 41", img: img41, description: "hello", price: "20000 rupees" },
   { title: "Artwork 42", img: img42, description: "hello", price: "20000 rupees" },
@@ -133,5 +129,6 @@ export const digitalArt =
   { title: "Artwork 69", img: img69, description: "hello", price: "20000 rupees" },
   { title: "Artwork 70", img: img70, description: "hello", price: "20000 rupees" },
   { title: "Artwork 71", img: img71, description: "hello", price: "20000 rupees" }
+
 ];
 

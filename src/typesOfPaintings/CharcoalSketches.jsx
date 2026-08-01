@@ -63,7 +63,7 @@ import { Charcoal } from "../ImportImages/CharcoalImport.js";
       >
          
         {Charcoal.map((painting, index) => (
-          <motion.div
+          <motion.div    style={{ color: "black", textAlign:"left"}}
             key={painting.id || index}
             className="art-card"
             variants={{
@@ -106,13 +106,13 @@ import { Charcoal } from "../ImportImages/CharcoalImport.js";
                 {painting.title}
               </motion.h1>
 
-              <p className="card-description">
+              <p className="card-description" style={{ color: "black", textAlign:"left", marginTop:"20px"}}>
                 {trimWords(painting.description, 50)}
               </p>
 
               <div className="card-footer">
                 <span className="artist-name">
-                  by {painting.artist || "Unknown"}
+                  {/* by {painting.artist || "Unknown"} */}
                 </span>
               </div>
             </div>
