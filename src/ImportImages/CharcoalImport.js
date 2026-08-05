@@ -151,8 +151,8 @@ export const Charcoal = [
     description: " "
   },
   {
-    title: "Commissioned work",
+    title: "sushant singh rajput",
     img: charcoal36,
-    description: " "
+    description: "A charcoal sketch of sushant singh rajput "
   }
 ];

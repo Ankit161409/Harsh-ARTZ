@@ -121,7 +121,7 @@ const PaintingDetails = () => {
             variants={item}
             transition={{ duration: 0.8 }}
           >
-            {painting.title}
+       <p className='left '> {painting.title}   </p>
           </motion.h1>
 
           <motion.p
@@ -130,6 +130,15 @@ const PaintingDetails = () => {
           >
             {painting.description}
           </motion.p>
+
+
+          <motion.p
+            style={{ marginTop: "20px", fontSize: "1.1rem" }}
+            variants={item}
+          >
+          <p className='h2'>  Price :  {painting.price}</p>
+          </motion.p>
+          
 
           <motion.button
             variants={item}
