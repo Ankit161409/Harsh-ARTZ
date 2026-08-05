@@ -1,13 +1,12 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Pen } from "../ImportImages/PenSketchesImport.js";
+import { Mixed } from '../ImportImages/MixedMediaImport';
  
 
 // import '../ArtGallery.css';
 
-  const PenSketches = () => {
+const MixedMedia = () => {
   const navigate = useNavigate();
 
   const trimWords = (text = "", wordLimit = 15) => {
@@ -20,33 +19,33 @@ import { Pen } from "../ImportImages/PenSketchesImport.js";
  
   return (
     <div className="background">
-     <motion.div
-            
-                  className="hero-content"
-                  initial="hidden"
-                  animate="visible"
-                  variants={{
-                    hidden: {},
-                    visible: {
-                      transition: {
-                        staggerChildren: 0.25,
-                      },
-                    },
-                  }}
-                >
-                   <motion.h1
-                   className="side"
-                   style={{ color: "black" }}
-                            variants={{
-                              hidden: { y: 40, opacity: 0 },
-                              visible: { y: 0, opacity: 1 },
-                            }}
-                            transition={{ duration: 1, ease: "easeOut" }}
-                          >
-                          Pen Sketches
-                           
-                          </motion.h1>
-                        </motion.div>
+       <motion.div
+        
+              className="hero-content  "
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    staggerChildren: 0.25,
+                  },
+                },
+              }}
+            >
+               <motion.h1
+               className="side"
+               style={{ color: "black" }}
+                        variants={{
+                          hidden: { y: 40, opacity: 0 },
+                          visible: { y: 0, opacity: 1 },
+                        }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                      >
+             Mixed Media
+                       
+                      </motion.h1>
+                    </motion.div>
       {/* Navbar */}
  
       {/* Gallery */}
@@ -61,9 +60,8 @@ import { Pen } from "../ImportImages/PenSketchesImport.js";
           },
         }}
       >
-         
-        {Pen.map((painting, index) => (
-          <motion.div    style={{ color: "black", textAlign:"left"}}
+        {Mixed.map((painting, index) => (
+          <motion.div
             key={painting.id || index}
             className="art-card"
             variants={{
@@ -76,9 +74,7 @@ import { Pen } from "../ImportImages/PenSketchesImport.js";
               boxShadow: "0 35px 60px -20px rgba(0,0,0,0.4)",
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            // onClick={() => navigate(`/painting/${index}`)}
-                        onClick={() => navigate(`/painting/Pen/${index}`)}
- 
+            onClick={() => navigate(`/painting/Mixed/${index}`)}
           >
             <div className="card-image-container">
               <img
@@ -106,13 +102,13 @@ import { Pen } from "../ImportImages/PenSketchesImport.js";
                 {painting.title}
               </motion.h1>
 
-              <p className="card-description" style={{ color: "black", textAlign:"left", marginTop:"20px"}}>
+              <p className="card-description">
                 {trimWords(painting.description, 50)}
               </p>
 
               <div className="card-footer">
                 <span className="artist-name">
-                  {/* by {painting.artist || "Unknown"} */}
+                  by {painting.artist || "Unknown"}
                 </span>
               </div>
             </div>
@@ -123,6 +119,6 @@ import { Pen } from "../ImportImages/PenSketchesImport.js";
   );
 };
 
+export default MixedMedia;
 
- export default PenSketches;
  

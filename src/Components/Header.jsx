@@ -39,14 +39,14 @@ const Header = () => {
       name: "Art Gallery",
       // path: "/art-gallery",
       children: [
-        { name: "Paintings", path: "/paintings" },
+    
         { name: "Sketches", path: "/sketches" },
-        { name: "Portraits", path: "/portraits" },
+   
         { name: "Acrylic Paintings", path: "/acrylic-paintings" },
         { name: "Watercolor Paintings", path: "/watercolor-paintings" },
         { name: "Pen Sketches", path: "/pen-sketches" },
         { name: "Charcoal Sketches", path: "/charcoal-sketches" },
-        { name: "Mixed Media Sketches", path: "/mixed-media-sketches" },
+        { name: "Mixed Media ", path: "/Mixed-Media" },
         { name: "Digital Art", path: "/digital-art" },
         { name: "Coloured Pencil", path: "/colouredPencil" }
       ],

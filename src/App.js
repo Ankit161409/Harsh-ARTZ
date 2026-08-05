@@ -14,6 +14,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Paintings from './typesOfPaintings/Paintings';
 import Charcoals from './typesOfPaintings/CharcoalSketches';
 import Digital from './typesOfPaintings/DigitalArt';
+import ColouredPencil from './typesOfPaintings/ColouredPencil';
+import MixedMedia from './typesOfPaintings/MixedMedia';
+import PenSketches from './typesOfPaintings/PenSketches';
+import WatercolorPaintings from './typesOfPaintings/WatercolorPaintings';
+
+
+ 
 
 
 
@@ -32,7 +39,14 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/lets-connect" element={<LetsConnect />} />
           <Route path="/digital-art" element={<Digital />} />
+          <Route path="/colouredPencil" element={<ColouredPencil />} />
+            <Route path="/Mixed-Media" element={<MixedMedia />} />
+              <Route path="/pen-sketches" element={<PenSketches/>} />
+              '   <Route path="/watercolor-paintings" element={<WatercolorPaintings/>} />
+
           <Route path="/painting/:apiType/:id"  element={<PaintingDetails />} />
+        
+
         </Routes>
         <Footer />
       </BrowserRouter>
