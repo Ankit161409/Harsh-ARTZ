@@ -69,7 +69,7 @@ const Header = () => {
         <div className="header-inner color-black">
           {/* LOGO */}
           <div className="logo">
-            <Link to="/">Artist harsh gautam</Link>
+            <Link to="/">HArsh Artz</Link>
           </div>
 
           {/* DESKTOP NAV */}

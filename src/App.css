@@ -24,7 +24,7 @@ html, body {
 }
 
 body{
-  background-color: #fff;
+  background-color: #9a5555;
   margin: 0 auto;
 }
 
@@ -487,17 +487,14 @@ footer{
  .art-grid {
  
   height:1000px;
-  /* height: auto;   */
- /* border: 1px solid red; */
-  /* margin: auto; */
+   
   display: grid;
-  /* grid-template-columns: repeat(2, 2fr); */
-  /* gap: 20px; */
+   
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;   
   padding: 0 20px;
   box-sizing: border-box; 
-  /* margin-bottom: 60px; */
+  
 
 }
