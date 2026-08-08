@@ -97,7 +97,7 @@ const Home=()=>{
     variants={{
       hidden: {},
       visible: {
-        transition: {
+        transition: {duration: 0.7, ease: "easeOut",
           staggerChildren: 0.15,
         },
       },
@@ -131,10 +131,10 @@ const Home=()=>{
     
     {/* <div className="art-grid"> */}
 
-  Row 1
+ 
  
 {/* </div> */}
-  </motion.div>
+ 
  <div className="art-grid">
  <div className="art-row"  >
     <div
@@ -160,27 +160,33 @@ const Home=()=>{
   </div>
   </div>
   
- 
-  {/* <div className="art-row">
+ <div className="art-grid">
+ <div className="art-row"  >
     <div
-      className="flip-front"
-      style={{ backgroundImage: `url(${home2})` }}
-    ></div>
-
-    <div
-      className="flip-front"
+      className="flip-front "
       style={{ backgroundImage: `url(${home1})` }}
     ></div>
-  </div>
 
- 
-  <div className="art-row">
     <div
       className="flip-front"
       style={{ backgroundImage: `url(${home2})` }}
     ></div>
-  </div> */}
+  </div>
+  </div>
+  
 
+  <div className="art-grid">
+ <div className="art-row"  > 
+  
+    <div
+      className="art-new"
+      style={{ backgroundImage: `url(${home3})` }}
+    ></div>
+  </div>
+  </div>
+  
+  
+   </motion.div>
 </section>
 
     {/**ABOUT THE ARTIST SECTION */}

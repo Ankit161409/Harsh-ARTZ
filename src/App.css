@@ -486,7 +486,7 @@ footer{
   /* max-width:2000px; */
   height:950px;
   /* height: auto; */
- border: 1px solid red;
+ /* border: 1px solid red; */
   /* margin: auto; */
   display: grid;
   grid-template-columns: repeat(2, 2fr);

@@ -5,13 +5,14 @@ image-resolution: calc();
  .art-grid{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+  /* height: auto; */
+    gap: 0px;
     margin:0 auto;
 }
 
 .art-row{
     display: flex;
-   margin:" 0 auto";
+   margin: 0 auto;
       width: 1520px;
     height: 900px;
     margin-left: -80px;
@@ -19,14 +20,14 @@ image-resolution: calc();
 
 .flip-front{
     width: 1000px;
-    height: 950px;
+    height: 900px;
     background-size: cover;
     background-position: center;
    
 }
 .art-new
 {
-    margin:" 0 auto";
+    margin: 0 auto;
 width: 100%;
     height: 900px;
      background-size: cover;
