@@ -1,5 +1,5 @@
 /* ========================================================= */
-/* ROOT / VARIABLES */
+/* ROOT */
 /* ========================================================= */
 
 :root {
@@ -18,19 +18,20 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  margin: 0;
-  padding: 0;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
   overflow-x: hidden;
   background-color: #9a5555;
 }
@@ -38,13 +39,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
+  display: block;
 }
 
 
@@ -56,14 +51,11 @@ select {
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 80px;
-
   z-index: 1000;
 
   background: #fff;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 
   transition: all 0.35s ease;
@@ -87,19 +79,12 @@ select {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-
-/* ========================================================= */
-/* HEADER INNER */
-/* ========================================================= */
-
 .header-inner {
   width: 100%;
   max-width: 1400px;
-
   height: 100%;
 
   margin: 0 auto;
-
   padding: 0 40px;
 
   display: flex;
@@ -107,48 +92,28 @@ select {
   justify-content: space-between;
 }
 
-
-/* ========================================================= */
-/* LOGO */
-/* ========================================================= */
-
 .logo a {
   font-family: var(--jost-font);
-
   font-size: 24px;
   font-weight: 500;
-
   color: #000;
-
   text-decoration: none;
-
   letter-spacing: 0.5px;
-
   text-transform: uppercase;
 }
 
-
-/* ========================================================= */
-/* NAVIGATION */
-/* ========================================================= */
-
 .main-nav {
   display: flex;
-
   gap: 36px;
 }
 
 .main-nav a {
   font-family: var(--satoshi-font);
-
   font-size: 18px;
-
   color: var(--text-clr);
-
   text-decoration: none;
 
   position: relative;
-
   padding: 4px 0;
 
   transition: color 0.3s ease;
@@ -160,7 +125,6 @@ select {
   content: "";
 
   position: absolute;
-
   left: 0;
   bottom: -6px;
 
@@ -196,14 +160,13 @@ select {
 
 
 /* ========================================================= */
-/* MOBILE MENU BUTTON */
+/* MOBILE MENU */
 /* ========================================================= */
 
 .menu-btn {
   display: none;
 
   background: none;
-
   border: none;
 
   font-size: 28px;
@@ -213,14 +176,8 @@ select {
   color: #000;
 }
 
-
-/* ========================================================= */
-/* SIDEBAR */
-/* ========================================================= */
-
 .sidebar-overlay {
   position: fixed;
-
   inset: 0;
 
   background: rgba(0, 0, 0, 0.4);
@@ -239,14 +196,13 @@ select {
 
   height: 100vh;
 
-  background: #222222;
+  background: #222;
 
   z-index: 2000;
 
   padding: 30px 24px;
 
   display: flex;
-
   flex-direction: column;
 }
 
@@ -266,7 +222,6 @@ select {
   margin-top: 40px;
 
   display: flex;
-
   flex-direction: column;
 
   gap: 20px;
@@ -303,23 +258,18 @@ select {
   background-image: url("./Images/additionalImages/poster1.png");
 
   background-size: cover;
-
   background-position: center;
-
   background-repeat: no-repeat;
 
   position: relative;
 
   display: grid;
-
   align-items: center;
-
   justify-content: center;
 }
 
 .hero-overlay {
   position: absolute;
-
   inset: 0;
 
   background: rgba(0, 0, 0, 0.45);
@@ -333,39 +283,38 @@ select {
 
   padding: 20px;
 
-  margin: 0;
-
   color: #f7f6f6;
 
   text-align: left;
+
+  margin-right: 600px;
 }
 
 .hero-content h1 {
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(44px, 5vw, 64px);
 
   font-weight: 800;
 
-  margin: 0 0 16px;
+  margin-bottom: 16px;
 
   font-family: var(--satoshi-font);
 
   text-transform: uppercase;
 }
 
-.hero-content p {
-  font-size: clamp(28px, 3vw, 40px);
-
-  font-weight: 400;
-
-  opacity: 0.9;
+.side {
+  margin-top: 100px;
+  margin-left: 650px;
+  margin-bottom: 0;
 
   font-family: "Bonheur Royale", cursive;
 
-  margin: 0;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.side {
-  margin: 100px 0 0;
+.hero-content p {
+  font-size: clamp(22px, 2vw, 40px);
 
   font-family: "Bonheur Royale", cursive;
 
@@ -374,17 +323,8 @@ select {
   font-style: normal;
 }
 
-
-/* ========================================================= */
-/* BACKGROUND */
-/* ========================================================= */
-
 .background {
   background-image: url("https://picsum.photos/1920/1080");
-
-  background-size: cover;
-
-  background-position: center;
 }
 
 
@@ -425,7 +365,6 @@ select {
 
 .art-top {
   width: 100%;
-
   max-width: 1400px;
 
   margin: 0 auto;
@@ -442,7 +381,7 @@ select {
 
   font-weight: 500;
 
-  margin: 0 0 20px;
+  margin-bottom: 20px;
 }
 
 .art-top h2 {
@@ -467,14 +406,7 @@ select {
   line-height: 1.7;
 
   font-weight: 300;
-
-  margin: 0;
 }
-
-
-/* ========================================================= */
-/* BUTTON WRAPPER */
-/* ========================================================= */
 
 .btn-wrapper {
   width: 100%;
@@ -487,7 +419,7 @@ select {
 
   gap: 30px;
 
-  margin: 0;
+  margin: 0 auto;
 }
 
 .art-btn {
@@ -512,7 +444,7 @@ select {
 
 
 /* ========================================================= */
-/* ART GRID WRAPPER */
+/* ART GRID */
 /* ========================================================= */
 
 .art-grid-wrapper {
@@ -527,14 +459,8 @@ select {
   overflow: hidden;
 }
 
-
-/* ========================================================= */
-/* ART GRID */
-/* ========================================================= */
-
 .art-grid {
   width: 100%;
-
   max-width: 1400px;
 
   min-height: 1000px;
@@ -560,16 +486,16 @@ select {
 
   max-width: 1520px;
 
-  min-height: 800px;
+  height: 800px;
 
   margin: 0 auto;
 
-  gap: 20px;
+  overflow: hidden;
 }
 
 
 /* ========================================================= */
-/* ARTWORK IMAGES */
+/* NORMAL ARTWORK */
 /* ========================================================= */
 
 .flip-front {
@@ -577,9 +503,7 @@ select {
 
   width: 50%;
 
-  min-width: 0;
-
-  height: 800px;
+  height: 100%;
 
   margin-top: 10px;
 
@@ -591,6 +515,11 @@ select {
 
   overflow: hidden;
 }
+
+
+/* ========================================================= */
+/* SINGLE LARGE ARTWORK */
+/* ========================================================= */
 
 .art-new {
   position: relative;
@@ -678,45 +607,6 @@ select {
   transform: translateY(0);
 
   opacity: 1;
-}
-
-
-/* ========================================================= */
-/* FLIP BACK */
-/* ========================================================= */
-
-.flip-back {
-  position: absolute;
-
-  inset: 0;
-
-  background: #000;
-
-  color: #fff;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  transform: rotateX(180deg);
-
-  backface-visibility: hidden;
-}
-
-.flip-back h3 {
-  font-family: var(--jost-font);
-
-  font-size: 34px;
-
-  letter-spacing: 1px;
-
-  text-transform: uppercase;
-
-  color: #fff;
-
-  font-weight: 300;
 }
 
 
@@ -827,7 +717,7 @@ select {
 
   text-align: center;
 
-  padding: 0 20px;
+  padding: 10px 20px;
 
   transform: translateY(15px);
 
@@ -967,13 +857,10 @@ select {
   background: #000;
 
   width: 100%;
-
-  overflow: hidden;
 }
 
 .content-wrapper {
   width: 100%;
-
   max-width: 1400px;
 
   margin: 0 auto;
@@ -993,8 +880,6 @@ select {
   position: relative;
 
   flex: 0 0 45%;
-
-  min-width: 0;
 }
 
 .artist-img img {
@@ -1003,8 +888,6 @@ select {
   height: auto;
 
   object-fit: contain;
-
-  display: block;
 }
 
 .artist-text {
@@ -1016,9 +899,7 @@ select {
 
   color: #fff;
 
-  flex: 1;
-
-  min-width: 0;
+  flex: 0 0 55%;
 }
 
 .artist-text h2,
@@ -1167,92 +1048,37 @@ footer {
 
 
 /* ========================================================= */
-/* TABLET */
 /* ========================================================= */
-
-@media (max-width: 1024px) {
-
-  .header-inner {
-    padding: 0 25px;
-  }
-
-  .main-nav {
-    gap: 20px;
-  }
-
-  .main-nav a {
-    font-size: 16px;
-  }
-
-  .hero-content {
-    max-width: 550px;
-
-    padding: 30px;
-
-    margin: 0;
-  }
-
-  .art-top {
-    padding: 100px 30px 180px;
-  }
-
-  .art-grid {
-    min-height: auto;
-
-    padding: 0 20px;
-  }
-
-  .art-row {
-    min-height: 650px;
-  }
-
-  .flip-front {
-    height: 650px;
-  }
-
-  .art-new {
-    height: 700px;
-
-    margin-top: 70px;
-  }
-
-  .slideshow-row {
-    height: 700px;
-
-    margin-top: 70px;
-  }
-
-  .content-wrapper {
-    padding: 100px 30px 150px;
-
-    gap: 40px;
-  }
-
-  .artist-text h2,
-  .expertise-section h1 {
-    font-size: 34px;
-  }
-
-  .artist-text h3 {
-    font-size: 28px;
-  }
-}
-
-
+/* MOBILE RESPONSIVE */
 /* ========================================================= */
-/* MOBILE */
 /* ========================================================= */
 
 @media (max-width: 768px) {
 
-  /* ================= HEADER ================= */
+  /* ======================================================= */
+  /* BODY */
+  /* ======================================================= */
+
+  html,
+  body {
+    width: 100%;
+
+    max-width: 100%;
+
+    overflow-x: hidden;
+  }
+
+
+  /* ======================================================= */
+  /* HEADER */
+  /* ======================================================= */
 
   .site-header {
     height: 65px;
   }
 
   .header-inner {
-    padding: 0 18px;
+    padding: 0 20px;
   }
 
   .logo a {
@@ -1267,35 +1093,39 @@ footer {
     display: block;
 
     color: #000;
+
+    margin: 0;
   }
 
   .home-header .menu-btn {
     color: #fff;
   }
 
-  .home-header.scrolled .menu-btn {
-    color: #000;
-  }
 
-
-  /* ================= HERO ================= */
+  /* ======================================================= */
+  /* HERO */
+  /* ======================================================= */
 
   .hero {
+    width: 100%;
+
     height: 100svh;
 
-    min-height: 550px;
+    min-height: 500px;
 
-    background-position: center;
+    background-position: center center;
+
+    background-size: cover;
   }
 
   .hero-content {
     width: 100%;
 
-    max-width: 100%;
-
-    padding: 20px;
+    max-width: none;
 
     margin: 0;
+
+    padding: 20px;
 
     text-align: center;
   }
@@ -1307,26 +1137,30 @@ footer {
   }
 
   .hero-content p {
-    font-size: clamp(26px, 8vw, 38px);
+    font-size: clamp(24px, 7vw, 36px);
 
     line-height: 1.2;
   }
 
   .side {
-    margin: 30px 0 0;
-  }
-
-
-  /* ================= ART TOP ================= */
-
-  .art-top {
-    padding: 80px 20px 160px;
+    margin: 20px 0 0;
 
     text-align: center;
   }
 
+
+  /* ======================================================= */
+  /* ART TOP */
+  /* ======================================================= */
+
+  .art-top {
+    width: 100%;
+
+    padding: 70px 20px 170px;
+  }
+
   .section-heading {
-    font-size: 30px;
+    font-size: clamp(28px, 8vw, 40px);
 
     line-height: 1.2;
 
@@ -1351,9 +1185,6 @@ footer {
     line-height: 1.7;
   }
 
-
-  /* ================= BUTTON ================= */
-
   .btn-wrapper {
     flex-direction: column;
 
@@ -1365,18 +1196,22 @@ footer {
   }
 
   .art-btn {
-    font-size: 15px;
-
-    padding: 10px 20px;
+    padding: 11px 25px;
   }
 
 
-  /* ================= GRID ================= */
+  /* ======================================================= */
+  /* ART GRID WRAPPER */
+  /* ======================================================= */
 
   .art-grid-wrapper {
+    width: 100%;
+
     margin-top: -100px;
 
     padding-bottom: 50px;
+
+    overflow: hidden;
   }
 
   .art-grid {
@@ -1388,109 +1223,123 @@ footer {
 
     height: auto;
 
+    margin: 0;
+
     padding: 0 12px;
 
     display: block;
 
-    overflow: visible;
+    overflow: hidden;
   }
 
 
-  /* ================= ROW ================= */
+  /* ======================================================= */
+  /* ART ROW */
+  /* ======================================================= */
 
   .art-row {
-    display: flex;
-
-    flex-direction: column;
-
     width: 100%;
 
     max-width: 100%;
 
     height: auto;
 
-    min-height: auto;
-
-    margin: 0;
-
-    gap: 15px;
-  }
-
-
-  /* ================= ART IMAGES ================= */
-
-  .flip-front {
-    width: 100%;
-
-    height: 500px;
-
     min-height: 0;
 
     margin: 0;
 
-    background-size: cover;
+    padding: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    overflow: visible;
+  }
+
+
+  /* ======================================================= */
+  /* IMPORTANT:
+     SHOW COMPLETE ARTWORK ON MOBILE
+  /* ======================================================= */
+
+  .flip-front {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    aspect-ratio: 4 / 5;
+
+    margin: 0;
+
+    background-size: contain;
 
     background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-color: transparent;
   }
+
+
+  /* ======================================================= */
+  /* SINGLE ARTWORK */
+  /* ======================================================= */
 
   .art-new {
     width: 100%;
 
-    height: 500px;
+    height: auto;
 
-    margin: 40px 0 0;
+    min-height: 0;
 
-    background-size: cover;
+    aspect-ratio: 4 / 5;
+
+    margin: 30px 0;
+
+    background-size: contain;
 
     background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-color: transparent;
   }
 
 
-  /* ================= ARTWORK TEXT ================= */
+  /* ======================================================= */
+  /* ARTWORK TEXT */
+  /* ======================================================= */
 
   .artwork-name {
-    font-size: 18px;
+    font-size: 16px;
 
     letter-spacing: 1px;
 
-    padding: 10px 15px;
+    padding: 8px 15px;
   }
 
 
-  /* ================= MOBILE TOUCH ================= */
-
-  /*
-     Phones do not have a real hover state.
-     Show overlay when the user taps/activates the artwork.
-  */
-
-  .flip-front:active .art-hover-overlay,
-  .art-new:active .art-hover-overlay {
-    background: rgba(0, 0, 0, 0.35);
-
-    opacity: 1;
-  }
-
-  .flip-front:active .artwork-name,
-  .art-new:active .artwork-name {
-    transform: translateY(0);
-
-    opacity: 1;
-  }
-
-
-  /* ================= SLIDESHOW ================= */
+  /* ======================================================= */
+  /* SLIDESHOW */
+  /* ======================================================= */
 
   .slideshow-row {
+    display: block !important;
+
     width: 100%;
 
-    height: 500px;
+    height: 75vw;
 
-    margin-top: 50px;
+    min-height: 280px;
 
-    margin-bottom: 10px;
+    max-height: 600px;
 
-    padding: 0;
+    margin: 30px 0 20px;
 
     overflow: hidden;
   }
@@ -1499,6 +1348,8 @@ footer {
     width: 100%;
 
     height: 100%;
+
+    overflow: hidden;
   }
 
   .art-slide {
@@ -1506,18 +1357,43 @@ footer {
 
     height: 100%;
 
+    background-size: contain;
+
     background-position: center;
 
-    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-color: transparent;
   }
 
 
-  /* ================= SLIDE BUTTONS ================= */
+  /* ======================================================= */
+  /* SLIDESHOW OVERLAY */
+  /* ======================================================= */
+
+  .art-slide-overlay {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  .art-slide-name {
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    padding: 8px 15px;
+  }
+
+
+  /* ======================================================= */
+  /* SLIDE BUTTONS */
+  /* ======================================================= */
 
   .slide-btn {
-    width: 40px;
+    width: 38px;
 
-    height: 40px;
+    height: 38px;
 
     font-size: 18px;
   }
@@ -1531,56 +1407,39 @@ footer {
   }
 
 
-  /* ================= SLIDE NAME ================= */
-
-  .art-slide-name {
-    font-size: 18px;
-
-    letter-spacing: 1px;
-
-    text-align: center;
-
-    padding: 0 15px;
-  }
-
-
-  /* ================= DOTS ================= */
+  /* ======================================================= */
+  /* DOTS */
+  /* ======================================================= */
 
   .slide-dots {
-    bottom: 15px;
+    bottom: 12px;
 
     gap: 5px;
 
-    max-width: 90%;
-
-    overflow-x: auto;
-
-    scrollbar-width: none;
-  }
-
-  .slide-dots::-webkit-scrollbar {
-    display: none;
+    max-width: 85%;
   }
 
   .slide-dot {
-    width: 7px;
+    width: 6px;
 
-    height: 7px;
+    height: 6px;
   }
 
   .slide-dot.active {
-    width: 20px;
+    width: 18px;
   }
 
 
-  /* ================= ABOUT ARTIST ================= */
+  /* ======================================================= */
+  /* ABOUT ARTIST */
+  /* ======================================================= */
 
   .content-wrapper {
-    flex-direction: column;
-
     width: 100%;
 
     padding: 70px 20px 100px;
+
+    flex-direction: column;
 
     gap: 40px;
 
@@ -1603,10 +1462,6 @@ footer {
     width: 100%;
 
     flex: none;
-
-    text-align: center;
-
-    align-items: center;
   }
 
   .artist-text h2,
@@ -1614,34 +1469,22 @@ footer {
     font-size: 30px;
 
     line-height: 1.2;
-
-    text-align: center;
   }
 
   .artist-text h3 {
     font-size: 25px;
-
-    align-self: center;
   }
 
   .artist-text p {
-    width: 100%;
-
     max-width: 100%;
 
     font-size: 16px;
-
-    text-align: center;
-  }
-
-  .hero-link {
-    font-size: 19px;
-
-    align-self: center;
   }
 
 
-  /* ================= FOOTER ================= */
+  /* ======================================================= */
+  /* FOOTER */
+  /* ======================================================= */
 
   footer {
     padding: 30px 20px;
@@ -1667,12 +1510,10 @@ footer {
     padding: 0 15px;
   }
 
-  .logo a {
-    font-size: 16px;
-  }
-
   .hero {
     min-height: 500px;
+
+    background-position: center center;
   }
 
   .hero-content {
@@ -1680,104 +1521,93 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 32px;
-
-    line-height: 1.05;
+    font-size: 34px;
   }
 
   .hero-content p {
-    font-size: 28px;
+    font-size: 27px;
   }
 
   .art-top {
-    padding: 70px 15px 140px;
+    padding: 60px 15px 150px;
   }
 
   .section-heading {
-    font-size: 27px;
+    font-size: 28px;
   }
 
   .section-text {
     font-size: 15px;
-
-    line-height: 1.65;
   }
 
   .art-grid {
-    padding: 0 10px;
+    padding: 0 8px;
   }
 
-  .flip-front {
-    height: 420px;
-  }
-
+  .flip-front,
   .art-new {
-    height: 420px;
+    aspect-ratio: 3 / 4;
 
-    margin-top: 30px;
+    background-size: contain;
   }
 
   .slideshow-row {
-    height: 420px;
+    height: 72vw;
 
-    margin-top: 35px;
+    min-height: 250px;
   }
 
   .slide-btn {
-    width: 36px;
+    width: 34px;
 
-    height: 36px;
+    height: 34px;
 
     font-size: 16px;
   }
 
   .slide-prev {
-    left: 8px;
+    left: 7px;
   }
 
   .slide-next {
-    right: 8px;
-  }
-
-  .art-slide-name {
-    font-size: 16px;
+    right: 7px;
   }
 
   .artist-text h2,
   .expertise-section h1 {
     font-size: 27px;
   }
-
-  .artist-text h3 {
-    font-size: 22px;
-  }
 }
 
 
 /* ========================================================= */
-/* VERY SMALL PHONES */
+/* VERY SMALL DEVICES */
 /* ========================================================= */
 
 @media (max-width: 360px) {
 
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .hero-content p {
+    font-size: 24px;
+  }
+
+  .section-heading {
     font-size: 25px;
+  }
+
+  .section-text {
+    font-size: 14px;
   }
 
   .flip-front,
   .art-new {
-    height: 360px;
+    aspect-ratio: 3 / 4;
   }
 
   .slideshow-row {
-    height: 360px;
-  }
-
-  .art-slide-name {
-    font-size: 14px;
+    min-height: 220px;
   }
 }
