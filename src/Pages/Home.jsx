@@ -8,7 +8,7 @@ import Hero from "../Components/Hero";
 import AboutArtist from "../Components/AboutArtist";
 import  "./Home.css";
 /**DATA IMPORT */
-// import { homePaintings } from "../Home";
+import { Mixed } from "../ImportImages/MixedMediaImport";
 import home1 from '../Images/mainpage/img2.jpeg';
 import home2 from '../Images/mainpage/img1.jpeg';
 import home3 from '../Images/mainpage/img3.jpeg';
@@ -104,7 +104,7 @@ const Home=()=>{
     }}
   >
     {/* <div className="art-grid ">
-      {homePaintings.map((item, i) => (
+      {Mixed.map((item, i) => (
         <motion.div
           className="flip-card"
           key={i}
@@ -126,12 +126,19 @@ const Home=()=>{
         </motion.div>
       ))}
     </div> */}
-    <div className="art-grid">
 
-  {/* Row 1 */}
-  <div className="art-row">
+
+    
+    {/* <div className="art-grid"> */}
+
+  Row 1
+ 
+{/* </div> */}
+  </motion.div>
+ <div className="art-grid">
+ <div className="art-row"  >
     <div
-      className="flip-front"
+      className="flip-front "
       style={{ backgroundImage: `url(${home1})` }}
     ></div>
 
@@ -140,17 +147,21 @@ const Home=()=>{
       style={{ backgroundImage: `url(${home2})` }}
     ></div>
   </div>
+  </div>
+  
 
-  {/* Row 2 */}
-  <div className="art-new">
+  <div className="art-grid">
+ <div className="art-row"  > 
+  
     <div
       className="art-new"
       style={{ backgroundImage: `url(${home3})` }}
     ></div>
   </div>
-
-  {/* Row 3 */}
-  <div className="art-row">
+  </div>
+  
+ 
+  {/* <div className="art-row">
     <div
       className="flip-front"
       style={{ backgroundImage: `url(${home2})` }}
@@ -162,16 +173,13 @@ const Home=()=>{
     ></div>
   </div>
 
-  {/* Row 4 */}
+ 
   <div className="art-row">
     <div
       className="flip-front"
       style={{ backgroundImage: `url(${home2})` }}
     ></div>
-  </div>
-
-</div>
-  </motion.div>
+  </div> */}
 
 </section>
 
@@ -186,21 +194,29 @@ export default Home;
 
 
 // copy in App.css 
+
 // .art-grid {
-//   max-width:2000px;
+//   /* max-width:2000px; */
 //   height:2000px;
 //   /* height: auto; */
 //  border: 1px solid red;
 //   /* margin: auto; */
 //   display: grid;
 //   grid-template-columns: repeat(2, 2fr);
-//   gap: 0px;
+//   gap: 20px;
 //    /* padding: 0px 40px 0px; */
+//    /* justify-content: center; */
+//     width: 100%;
+//   max-width: 1400px;
+//   margin: 0 auto;   
+//   padding: 0 20px;
+//   box-sizing: border-box; 
+
 // }
 
 // .flip-card {
 //   perspective: 1200px;
-//   width: 100%;
+//   width: 300px;
 //   height:900px;
 //   border: 1px solid red;
  
@@ -221,7 +237,7 @@ export default Home;
 // }
 
 // .flip-card:hover .flip-inner {
-//   /* transform: rotateX(180deg); */
+//   transform: rotateX(180deg);
 // }
 
 // .flip-front {
@@ -230,4 +246,5 @@ export default Home;
 //   background-size: cover;
 //   background-position: center;
 //   backface-visibility: hidden;
+//   width:400px;
 // }

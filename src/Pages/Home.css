@@ -3,27 +3,31 @@
 image-resolution: calc();
 } */
  .art-grid{
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     gap: 25px;
+    margin:0 auto;
 }
 
 .art-row{
     display: flex;
-    /* gap: 20px; */
-    
+   margin:" 0 auto";
+      width: 1520px;
+    height: 900px;
+    margin-left: -80px;
 }
 
 .flip-front{
-    width: 900px;
-    height: 900px;
+    width: 1000px;
+    height: 950px;
     background-size: cover;
     background-position: center;
    
 }
 .art-new
 {
-width: 1700px;
+    margin:" 0 auto";
+width: 100%;
     height: 900px;
      background-size: cover;
     background-position: center;
