@@ -4,27 +4,23 @@ image-resolution: calc();
 } */
 
 
- .art-grid{
-    display: flex;
-    flex-direction: column;
  
-    gap: 0px;
-    margin:0 auto;
-}
-
 .art-row{
     display: flex;
    margin: 0 auto;
       width: 1520px;
-    height: 900px;
+    height: 800px;
     margin-left: -80px;
 }
 
 .flip-front{
     width: 1000px;
-    height: 900px;
+    height: 1080px;
     background-size: cover;
     background-position: center;
+ /* border: 1px solid red; */
+ margin-top: 10px;
+
    
 }
 .art-new
@@ -34,6 +30,8 @@ width: 100%;
     height: 900px;
      background-size: cover;
     background-position: center;
+    margin-top: 100px;
+      
 }
 
 /* ================================= */
@@ -135,6 +133,9 @@ width: 100%;
   display: block !important;
   position: relative;
   overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  height: 890px;
 }
 
 

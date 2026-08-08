@@ -188,7 +188,7 @@ body{
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("./Images/home/poster1.png"); 
+  background-image: url("./Images/additionalImages/poster1.png"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,19 +482,22 @@ footer{
 
 
 
+ 
+
  .art-grid {
-  /* max-width:2000px; */
-  height:950px;
-  /* height: auto; */
+ 
+  height:1000px;
+  /* height: auto;   */
  /* border: 1px solid red; */
   /* margin: auto; */
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  /* grid-template-columns: repeat(2, 2fr); */
   /* gap: 20px; */
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;   
   padding: 0 20px;
   box-sizing: border-box; 
+  /* margin-bottom: 60px; */
 
 }
