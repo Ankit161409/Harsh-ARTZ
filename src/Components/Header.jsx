@@ -40,9 +40,9 @@ const Header = () => {
       // path: "/art-gallery",
       children: [
     
-        { name: "Sketches", path: "/sketches" },
+        // { name: "Sketches", path: "/sketches" },
    
-        { name: "Acrylic Paintings", path: "/acrylic-paintings" },
+        // { name: "Acrylic Paintings", path: "/acrylic-paintings" },
         { name: "Watercolor Paintings", path: "/watercolor-paintings" },
         { name: "Pen Sketches", path: "/pen-sketches" },
         { name: "Charcoal Sketches", path: "/charcoal-sketches" },

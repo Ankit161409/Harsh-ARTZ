@@ -2,10 +2,12 @@
 {
 image-resolution: calc();
 } */
+
+
  .art-grid{
     display: flex;
     flex-direction: column;
-  /* height: auto; */
+ 
     gap: 0px;
     margin:0 auto;
 }

@@ -490,7 +490,7 @@ footer{
   /* margin: auto; */
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  gap: 20px;
+  /* gap: 20px; */
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;   
