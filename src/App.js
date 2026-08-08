@@ -19,7 +19,8 @@ import MixedMedia from './typesOfPaintings/MixedMedia';
 import PenSketches from './typesOfPaintings/PenSketches';
 import WatercolorPaintings from './typesOfPaintings/WatercolorPaintings';
 
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
  
 
 
