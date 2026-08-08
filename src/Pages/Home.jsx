@@ -38,6 +38,43 @@ const imageTransition = {
 
 
 /* ===================================================== */
+/* SLIDESHOW DATA */
+/* ===================================================== */
+
+const slides = [
+  {
+    image: home6,
+    name: "Charcoal Artwork",
+  },
+
+  {
+    image: home1,
+    name: "Charcoal Portrait",
+  },
+
+  {
+    image: home2,
+    name: "Mixed Media Artwork",
+  },
+
+  {
+    image: home3,
+    name: "Mixed Media Artwork",
+  },
+
+  {
+    image: home4,
+    name: "Charcoal Artwork",
+  },
+
+  {
+    image: home5,
+    name: "Charcoal Artwork",
+  },
+];
+
+
+/* ===================================================== */
 /* ARTWORK IMAGE COMPONENT */
 /* ===================================================== */
 
@@ -52,17 +89,24 @@ const ArtworkImage = ({
       style={{
         backgroundImage: `url(${image})`,
       }}
+
       variants={imageVariants}
+
       initial="hidden"
+
       whileInView="visible"
+
       viewport={{
         once: true,
         amount: 0.1,
       }}
+
       transition={imageTransition}
     >
 
+      {/* =============================================== */}
       {/* HOVER OVERLAY */}
+      {/* =============================================== */}
 
       <div className="art-hover-overlay">
 
@@ -83,58 +127,26 @@ const ArtworkImage = ({
 
 const ArtworkSlideshow = () => {
 
-  const slides = [
-    {
-      image: home6,
-      name: "Charcoal Artwork",
-    },
-
-    {
-      image: home1,
-      name: "Charcoal Portrait",
-    },
-
-    {
-      image: home2,
-      name: "Mixed Media Artwork",
-    },
-
-    {
-      image: home3,
-      name: "Mixed Media Artwork",
-    },
-
-    {
-      image: home4,
-      name: "Charcoal Artwork",
-    },
-
-    {
-      image: home5,
-      name: "Charcoal Artwork",
-    },
-  ];
-
-
-  /* ============================= */
+  /* =============================================== */
   /* CURRENT SLIDE */
-  /* ============================= */
+  /* =============================================== */
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
 
-  /* ============================= */
+  /* =============================================== */
   /* PAUSE ON HOVER */
-  /* ============================= */
+  /* =============================================== */
 
   const [isPaused, setIsPaused] = useState(false);
 
 
-  /* ============================= */
+  /* =============================================== */
   /* NEXT SLIDE */
-  /* ============================= */
+  /* =============================================== */
 
   const nextSlide = () => {
+
     setCurrentIndex((prevIndex) => {
 
       if (prevIndex === slides.length - 1) {
@@ -142,15 +154,18 @@ const ArtworkSlideshow = () => {
       }
 
       return prevIndex + 1;
+
     });
+
   };
 
 
-  /* ============================= */
+  /* =============================================== */
   /* PREVIOUS SLIDE */
-  /* ============================= */
+  /* =============================================== */
 
   const previousSlide = () => {
+
     setCurrentIndex((prevIndex) => {
 
       if (prevIndex === 0) {
@@ -158,23 +173,40 @@ const ArtworkSlideshow = () => {
       }
 
       return prevIndex - 1;
+
     });
+
   };
 
 
-  /* ============================= */
+  /* =============================================== */
   /* AUTOMATIC SLIDESHOW */
-  /* ============================= */
+  /* =============================================== */
 
   useEffect(() => {
 
     if (isPaused) {
-      return;
+      return undefined;
     }
 
     const interval = setInterval(() => {
-      nextSlide();
+
+      setCurrentIndex((prevIndex) => {
+
+        if (prevIndex === slides.length - 1) {
+          return 0;
+        }
+
+        return prevIndex + 1;
+
+      });
+
     }, 3000);
+
+
+    /* =============================================== */
+    /* CLEANUP */
+    /* =============================================== */
 
     return () => {
       clearInterval(interval);
@@ -182,6 +214,10 @@ const ArtworkSlideshow = () => {
 
   }, [isPaused]);
 
+
+  /* =============================================== */
+  /* RENDER */
+  /* =============================================== */
 
   return (
 
@@ -204,7 +240,9 @@ const ArtworkSlideshow = () => {
       <AnimatePresence mode="wait">
 
         <motion.div
+
           key={currentIndex}
+
           className="art-slide"
 
           style={{
@@ -232,9 +270,9 @@ const ArtworkSlideshow = () => {
           }}
         >
 
-          {/* ================================================= */}
+          {/* ============================================= */}
           {/* HOVER OVERLAY */}
-          {/* ================================================= */}
+          {/* ============================================= */}
 
           <div className="art-slide-overlay">
 
@@ -254,8 +292,13 @@ const ArtworkSlideshow = () => {
       {/* ================================================= */}
 
       <button
+
+        type="button"
+
         className="slide-btn slide-prev"
+
         onClick={previousSlide}
+
         aria-label="Previous artwork"
       >
         &#10094;
@@ -267,8 +310,13 @@ const ArtworkSlideshow = () => {
       {/* ================================================= */}
 
       <button
+
+        type="button"
+
         className="slide-btn slide-next"
+
         onClick={nextSlide}
+
         aria-label="Next artwork"
       >
         &#10095;
@@ -281,10 +329,14 @@ const ArtworkSlideshow = () => {
 
       <div className="slide-dots">
 
-        {slides.map((_, index) => (
+        {slides.map((slide, index) => (
 
           <button
-            key={index}
+
+            type="button"
+
+            key={slide.name + index}
+
             className={`slide-dot ${
               index === currentIndex
                 ? "active"
@@ -315,6 +367,7 @@ const Home = () => {
 
   return (
     <>
+
       {/* ================================================= */}
       {/* HERO SECTION */}
       {/* ================================================= */}
@@ -334,6 +387,7 @@ const Home = () => {
         {/* ================================================= */}
 
         <motion.div
+
           className="art-top-bg"
 
           initial={{
@@ -356,6 +410,7 @@ const Home = () => {
         >
 
           <motion.div
+
             className="art-top"
 
             initial="hidden"
@@ -378,11 +433,12 @@ const Home = () => {
             }}
           >
 
-            {/* ================================================= */}
+            {/* ============================================= */}
             {/* HEADING */}
-            {/* ================================================= */}
+            {/* ============================================= */}
 
             <motion.h2
+
               className="section-heading"
 
               variants={{
@@ -406,11 +462,12 @@ const Home = () => {
             </motion.h2>
 
 
-            {/* ================================================= */}
+            {/* ============================================= */}
             {/* TEXT + BUTTON */}
-            {/* ================================================= */}
+            {/* ============================================= */}
 
             <motion.div
+
               className="btn-wrapper"
 
               variants={{
@@ -465,13 +522,16 @@ const Home = () => {
               </p>
 
 
-              {/* ================================================= */}
+              {/* ============================================= */}
               {/* KNOW MORE BUTTON */}
-              {/* ================================================= */}
+              {/* ============================================= */}
 
               <Link to="/Lets-connect">
 
                 <motion.button
+
+                  type="button"
+
                   className="art-btn"
 
                   whileHover={{
@@ -606,3 +666,4 @@ const Home = () => {
 
 
 export default Home;
+ 
