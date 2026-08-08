@@ -1,42 +1,58 @@
-:root{
- --satoshi-font:"Satoshi", sans-serif;;
- --jost-font:'Jost', sans-serif;
- --yellow-bg: #FAF2EA;
- --text-clr: #888888;
- --btn-bg: #69727d;
+/* ========================================================= */
+/* ROOT VARIABLES */
+/* ========================================================= */
+
+:root {
+  --satoshi-font: "Satoshi", sans-serif;
+  --jost-font: "Jost", sans-serif;
+
+  --yellow-bg: #faf2ea;
+  --text-clr: #888888;
+  --btn-bg: #69727d;
 }
+
+
+/* ========================================================= */
+/* GLOBAL RESET */
+/* ========================================================= */
 
 * {
   box-sizing: border-box;
-
- 
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-
 }
 
-
-
-html, body {
+html,
+body {
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-body{
+body {
   background-color: #9a5555;
-  margin: 0 auto;
 }
+
+
+/* ========================================================= */
+/* HEADER */
+/* ========================================================= */
 
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 80px;
+
   z-index: 1000;
+
   background: #fff;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
   transition: all 0.35s ease;
 }
 
@@ -49,19 +65,27 @@ body{
 .home-header.scrolled {
   position: fixed;
   background: #fff;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .site-header.scrolled {
   position: fixed;
-  background: #fff; 
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+
+/* ========================================================= */
+/* HEADER INNER */
+/* ========================================================= */
+
 .header-inner {
+  width: 100%;
   max-width: 1400px;
+
   height: 100%;
-  margin: auto;
+
+  margin: 0 auto;
   padding: 0 40px;
 
   display: flex;
@@ -69,15 +93,29 @@ body{
   justify-content: space-between;
 }
 
+
+/* ========================================================= */
+/* LOGO */
+/* ========================================================= */
+
 .logo a {
   font-family: var(--jost-font);
+
   font-size: 24px;
   font-weight: 500;
+
   color: #000;
+
   text-decoration: none;
   letter-spacing: 0.5px;
+
   text-transform: uppercase;
 }
+
+
+/* ========================================================= */
+/* NAVIGATION */
+/* ========================================================= */
 
 .main-nav {
   display: flex;
@@ -85,24 +123,34 @@ body{
 }
 
 .main-nav a {
+  position: relative;
+
+  padding: 4px 0;
+
   font-family: var(--satoshi-font);
   font-size: 18px;
-  color: var(--text-clr);
-  text-decoration: none;
-  position: relative;
-  padding: 4px 0;
-  transition: color 0.3s ease;
   font-weight: 300;
+
+  color: var(--text-clr);
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
 }
 
 .main-nav a::after {
   content: "";
+
   position: absolute;
+
   left: 0;
   bottom: -6px;
+
   width: 0%;
   height: 2px;
+
   background: #fff;
+
   transition: width 0.3s ease;
 }
 
@@ -125,269 +173,855 @@ body{
 }
 
 .site-header.scrolled .main-nav a::after {
-  background: #000; 
+  background: #000;
 }
+
+
+/* ========================================================= */
+/* MENU BUTTON */
+/* ========================================================= */
 
 .menu-btn {
   display: none;
+
   background: none;
   border: none;
+
   font-size: 28px;
+
   cursor: pointer;
+
   color: #000;
 }
 
+
+/* ========================================================= */
+/* SIDEBAR */
+/* ========================================================= */
+
 .sidebar-overlay {
   position: fixed;
+
   inset: 0;
-  background: rgba(0,0,0,0.4);
+
+  background: rgba(0, 0, 0, 0.4);
+
   z-index: 1999;
 }
 
 .sidebar {
   position: fixed;
+
   top: 0;
   left: 0;
+
   width: 280px;
+  max-width: 85vw;
   height: 100vh;
+
   background: #222222;
+
   z-index: 2000;
+
   padding: 30px 24px;
+
   display: flex;
   flex-direction: column;
 }
 
 .sidebar-logo {
   font-family: var(--jost-font);
+
   font-size: 20px;
+
   color: #fff;
+
   text-decoration: none;
+
   text-transform: uppercase;
 }
 
 .sidebar-nav {
   margin-top: 40px;
+
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 }
 
 .sidebar-nav a {
   color: #ddd;
+
   text-decoration: none;
+
   font-family: var(--satoshi-font);
   font-size: 16px;
 }
 
 .sidebar-footer {
   margin-top: auto;
+
   color: #aaa;
+
   font-size: 14px;
 }
 
+
+/* ========================================================= */
+/* HERO */
+/* ========================================================= */
+
 .hero {
-  height: 100vh;
+  position: relative;
+
   width: 100%;
-  background-image: url("./Images/additionalImages/poster1.png"); 
+  height: 100vh;
+  min-height: 600px;
+
+  background-image: url("./Images/additionalImages/poster1.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
 
   display: grid;
+
   align-items: center;
   justify-content: center;
 }
 
 .hero-overlay {
   position: absolute;
+
   inset: 0;
+
   background: rgba(0, 0, 0, 0.45);
 }
-.background
-{
-   /* background-image: url("./Images/home/img\ \(30\).jpeg");  */
-    
-      background-image: url("https://picsum.photos/1920/1080"); 
- 
+
+.background {
+  background-image: url("https://picsum.photos/1920/1080");
 }
+
+
+/* ========================================================= */
+/* HERO CONTENT */
+/* ========================================================= */
+
 .hero-content {
   position: relative;
-  text-align: left;
-  color: #f7f6f6;
+
+  width: 100%;
   max-width: 600px;
-  padding: 0px;
-  margin-right: 600px;
- 
+
+  padding: 0;
+
+  margin: 0 600px 0 0;
+
+  color: #f7f6f6;
+
+  text-align: left;
 }
 
 .hero-content h1 {
-  font-size: clamp(44px, 5vw, 64px);
-  font-weight: 800;
-  margin-bottom: 16px;
   font-family: var(--satoshi-font);
-  
-  /* font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal; */
+
+  font-size: clamp(44px, 5vw, 64px);
+
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  margin-bottom: 16px;
 
   text-transform: uppercase;
-  
 }
-.side
-{
 
-  margin-top:100px;
-  margin-left: 650px;
-  margin-bottom: 0px;
-       font-family: "Bonheur Royale", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 .hero-content p {
-  font-size: clamp(40px, 2vw, 22px);
-  font-weight: 500;
-  opacity: 0.9;
-  /* font-family: var(--jost-font);
-  font-style: italic; */
-     font-family: "Bonheur Royale", cursive;
+  font-family: "Bonheur Royale", cursive;
+
+  font-size: clamp(30px, 4vw, 40px);
+
   font-weight: 400;
+
+  line-height: 1.2;
+
+  opacity: 0.9;
+}
+
+
+/* ========================================================= */
+/* HERO SIDE TEXT */
+/* ========================================================= */
+
+.side {
+  margin-top: 100px;
+  margin-left: 650px;
+  margin-bottom: 0;
+
+  font-family: "Bonheur Royale", cursive;
+
+  font-weight: 400;
+
   font-style: normal;
 }
 
 
+/* ========================================================= */
+/* GENERAL CLASSES */
+/* ========================================================= */
 
-
-.left
-{
+.left {
   text-align: left;
 }
+
+.white {
+  color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+
+/* ========================================================= */
+/* ART SHOWCASE */
+/* ========================================================= */
 
 .art-showcase {
   position: relative;
+
+  width: 100%;
 }
 
+
+/* ========================================================= */
+/* ART TOP BACKGROUND */
+/* ========================================================= */
+
 .art-top-bg {
+  width: 100%;
+
   background: var(--yellow-bg);
 }
 
+
+/* ========================================================= */
+/* ART TOP */
+/* ========================================================= */
+
 .art-top {
+  width: 100%;
   max-width: 1400px;
-  margin: auto;
+
+  margin: 0 auto;
+
   text-align: center;
+
   padding: 120px 40px 200px;
 }
 
-.section-heading{
+
+/* ========================================================= */
+/* SECTION HEADING */
+/* ========================================================= */
+
+.section-heading {
   font-family: var(--jost-font);
+
   font-size: 40px;
+
   font-weight: 500;
+
+  line-height: 1.2;
+
   margin-bottom: 20px;
 }
 
-.art-top h2{
-  text-align: left;
+.art-top h2 {
+  width: 100%;
   max-width: 550px;
+
+  text-align: left;
 }
 
 .art-top p {
+  width: 100%;
   max-width: 650px;
+
   text-align: left;
 }
 
-.section-text{
+
+/* ========================================================= */
+/* SECTION TEXT */
+/* ========================================================= */
+
+.section-text {
   font-family: var(--satoshi-font);
+
   color: var(--text-clr);
-   font-size: 18px;
+
+  font-size: 18px;
+
   line-height: 1.7;
-    font-weight: 300;
-}
 
-.btn-wrapper{
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin: auto;
-}
-
-.art-btn {
-  background: var(--btn-bg);
-  color: #fff;
-  border: none;
-  padding: 10px 22px;
-  font-family: var(--satoshi-font);
-  font-size: 16px;
-  cursor: pointer;
   font-weight: 300;
 }
 
+
+/* ========================================================= */
+/* BUTTON WRAPPER */
+/* ========================================================= */
+
+.btn-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin: 0 auto;
+}
+
+
+/* ========================================================= */
+/* ART BUTTON */
+/* ========================================================= */
+
+.art-btn {
+  background: var(--btn-bg);
+
+  color: #fff;
+
+  border: none;
+
+  padding: 10px 22px;
+
+  font-family: var(--satoshi-font);
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  font-weight: 300;
+}
+
+
+/* ========================================================= */
+/* ART GRID WRAPPER */
+/* ========================================================= */
+
 .art-grid-wrapper {
   position: relative;
-  margin-top: -140px; 
+
+  width: 100%;
+
+  margin-top: -140px;
+
   padding-bottom: 100px;
 }
 
-.flip-back {
-  position: absolute;
-  inset: 0;
-  background: #000;
-  color: #fff;
+
+/* ========================================================= */
+/* ART GRID */
+/* ========================================================= */
+
+.art-grid {
+  width: 100%;
+  max-width: 1400px;
+
+  min-height: 0;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  display: grid;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================================= */
+/* ART ROW */
+/* ========================================================= */
+
+.art-row {
   display: flex;
+
+  width: 100%;
+  max-width: 1520px;
+
+  height: 800px;
+
+  margin: 0 auto;
+}
+
+
+/* ========================================================= */
+/* ARTWORK IMAGE */
+/* ========================================================= */
+
+.flip-front {
+  position: relative;
+
+  width: 50%;
+  height: 800px;
+
+  margin-top: 10px;
+
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ========================================================= */
+/* SINGLE LARGE ARTWORK */
+/* ========================================================= */
+
+.art-new {
+  position: relative;
+
+  width: 100%;
+  height: 800px;
+
+  margin: 100px auto 0;
+
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ========================================================= */
+/* HOVER OVERLAY */
+/* ========================================================= */
+
+.art-hover-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
   align-items: center;
   justify-content: center;
+
+  background: rgba(0, 0, 0, 0);
+
+  opacity: 0;
+
+  transition:
+    background 0.35s ease,
+    opacity 0.35s ease;
+
+  pointer-events: none;
+}
+
+.flip-front:hover .art-hover-overlay,
+.art-new:hover .art-hover-overlay {
+  background: rgba(0, 0, 0, 0.35);
+
+  opacity: 1;
+}
+
+
+/* ========================================================= */
+/* ARTWORK NAME */
+/* ========================================================= */
+
+.artwork-name {
+  color: white;
+
+  font-size: 28px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  padding: 12px 25px;
+
+  transform: translateY(15px);
+
+  opacity: 0;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.flip-front:hover .artwork-name,
+.art-new:hover .artwork-name {
+  transform: translateY(0);
+
+  opacity: 1;
+}
+
+
+/* ========================================================= */
+/* SLIDESHOW ROW */
+/* ========================================================= */
+
+.slideshow-row {
+  position: relative;
+
+  display: block !important;
+
+  width: 100%;
+
+  height: 800px;
+
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+  overflow: hidden;
+}
+
+
+/* ========================================================= */
+/* SLIDESHOW CONTAINER */
+/* ========================================================= */
+
+.art-slideshow {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+
+/* ========================================================= */
+/* SLIDE */
+/* ========================================================= */
+
+.art-slide {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ========================================================= */
+/* SLIDESHOW HOVER OVERLAY */
+/* ========================================================= */
+
+.art-slide-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0);
+
+  opacity: 0;
+
+  transition:
+    background 0.35s ease,
+    opacity 0.35s ease;
+
+  pointer-events: none;
+}
+
+.art-slide:hover .art-slide-overlay {
+  background: rgba(0, 0, 0, 0.35);
+
+  opacity: 1;
+}
+
+
+/* ========================================================= */
+/* SLIDESHOW TITLE */
+/* ========================================================= */
+
+.art-slide-name {
+  color: white;
+
+  font-size: 28px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+  padding: 0 20px;
+
+  transform: translateY(15px);
+
+  opacity: 0;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.art-slide:hover .art-slide-name {
+  transform: translateY(0);
+
+  opacity: 1;
+}
+
+
+/* ========================================================= */
+/* SLIDESHOW BUTTONS */
+/* ========================================================= */
+
+.slide-btn {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  color: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.slide-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+
+  transform: translateY(-50%) scale(1.08);
+}
+
+.slide-prev {
+  left: 25px;
+}
+
+.slide-next {
+  right: 25px;
+}
+
+
+/* ========================================================= */
+/* SLIDE DOTS */
+/* ========================================================= */
+
+.slide-dots {
+  position: absolute;
+
+  left: 50%;
+  bottom: 25px;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  display: flex;
+
+  gap: 8px;
+
+  max-width: 90%;
+
+  overflow: hidden;
+}
+
+.slide-dot {
+  flex-shrink: 0;
+
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
+}
+
+.slide-dot.active {
+  width: 28px;
+
+  border-radius: 10px;
+
+  background: white;
+}
+
+.slide-dot:hover {
+  background: white;
+}
+
+
+/* ========================================================= */
+/* FLIP BACK */
+/* ========================================================= */
+
+.flip-back {
+  position: absolute;
+
+  inset: 0;
+
+  background: #000;
+
+  color: #fff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
   transform: rotateX(180deg);
+
   backface-visibility: hidden;
 }
 
 .flip-back h3 {
   font-family: var(--jost-font);
+
   font-size: 34px;
+
   letter-spacing: 1px;
+
   text-transform: uppercase;
+
   color: #fff;
+
   font-weight: 300;
 }
 
 
-.about-artist-section{
+/* ========================================================= */
+/* ABOUT ARTIST */
+/* ========================================================= */
+
+.about-artist-section {
+  width: 100%;
+
   background: #000;
 }
 
-.content-wrapper{
+
+/* ========================================================= */
+/* ARTIST CONTENT */
+/* ========================================================= */
+
+.content-wrapper {
+  width: 100%;
   max-width: 1400px;
-  margin: auto;
+
+  margin: 0 auto;
+
   display: flex;
+
   flex-direction: row;
+
   align-items: center;
+
   gap: 4rem;
+
   padding: 120px 40px 200px;
 }
 
-.artist-img{
-position: relative;
-flex: 0 0 45%;  
+
+/* ========================================================= */
+/* ARTIST IMAGE */
+/* ========================================================= */
+
+.artist-img {
+  position: relative;
+
+  flex: 0 0 45%;
+
+  width: 100%;
 }
 
-.artist-img img{
- width: 100%;
- height: auto;
- object-fit: contain;
+.artist-img img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
 }
 
-.artist-text{
+
+/* ========================================================= */
+/* ARTIST TEXT */
+/* ========================================================= */
+
+.artist-text {
   display: flex;
+
   flex-direction: column;
+
   text-align: left;
+
   color: #fff;
-    flex: 0 0 55%;
+
+  flex: 0 0 55%;
+
+  min-width: 0;
 }
 
-.artist-text h2,.expertise-section h1{
+.artist-text h2,
+.expertise-section h1 {
   font-family: var(--jost-font);
+
   font-size: 40px;
+
   font-weight: 500;
 
- 
+  line-height: 1.2;
+
   background: linear-gradient(
     90deg,
     #6a5cff 0%,
@@ -397,104 +1031,865 @@ flex: 0 0 45%;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   background-clip: text;
 }
 
-.artist-text h3{
-  font-size: 34px;
-   position: relative;
-   display: inline-flex;   
+.artist-text h3 {
+  position: relative;
+
+  display: inline-flex;
+
   align-self: flex-start;
+
   font-family: var(--satoshi-font);
+
+  font-size: 34px;
+
   letter-spacing: 2px;
+
   font-weight: 500;
 }
 
-.artist-text h3::after{
- content: "";
+.artist-text h3::after {
+  content: "";
+
   position: absolute;
+
   left: 0;
-  bottom: -6px;   
+  bottom: -6px;
+
   width: 100%;
   height: 1px;
+
   background: #fff;
 }
 
-.artist-text p{
-  font-family: var(--satoshi-font);
-  color: var(--text-clr);
-  line-height: 1.7;
-  font-size: 18px;
-  font-weight: 300;
+.artist-text p {
+  width: 100%;
   max-width: 500px;
+
+  font-family: var(--satoshi-font);
+
+  color: var(--text-clr);
+
+  line-height: 1.7;
+
+  font-size: 18px;
+
+  font-weight: 300;
 }
 
-.hero-link{
-  font-size: 22px;
-  font-family: var(--jost-font);
-   color: var(--text-clr);
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-    position: relative;
-  display: inline-flex;  
+
+/* ========================================================= */
+/* HERO LINK */
+/* ========================================================= */
+
+.hero-link {
+  position: relative;
+
+  display: inline-flex;
+
   align-self: flex-start;
+
+  font-size: 22px;
+
+  font-family: var(--jost-font);
+
+  color: var(--text-clr);
+
+  line-height: 1.7;
+
+  margin-bottom: 1rem;
+
+  font-weight: 400;
+
+  letter-spacing: 1px;
+
   text-decoration: none;
 }
-.white
-{
-  color: white;
-}
-.black
-{
-  background-color: black;
-}
+
 .hero-link::after {
   content: "";
+
   position: absolute;
+
   left: 0;
-  bottom: -6px;   
+  bottom: -6px;
+
   width: 100%;
   height: 1px;
+
   background: var(--text-clr);
 }
 
-footer{
+
+/* ========================================================= */
+/* FOOTER */
+/* ========================================================= */
+
+footer {
+  width: 100%;
+
   background-color: #222222;
+
   padding: 40px;
+
   text-align: center;
 }
 
-.social-icons{
+
+/* ========================================================= */
+/* SOCIAL ICONS */
+/* ========================================================= */
+
+.social-icons {
   display: flex;
+
   flex-direction: row;
+
   gap: 1rem;
+
   align-items: center;
   justify-content: center;
-  margin: auto;
+
+  margin: 0 auto;
 }
 
-.spacing-div{
+
+/* ========================================================= */
+/* SPACING */
+/* ========================================================= */
+
+.spacing-div {
   margin-top: 8rem;
 }
 
 
+/* ========================================================= */
+/* TABLET */
+/* ========================================================= */
+
+@media (max-width: 1024px) {
+
+  /* HEADER */
+
+  .header-inner {
+    padding: 0 25px;
+  }
+
+  .main-nav {
+    gap: 22px;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+  }
 
 
- 
+  /* HERO */
 
- .art-grid {
- 
-  height:1000px;
-   
-  display: grid;
-   
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;   
-  padding: 0 20px;
-  box-sizing: border-box; 
-  
+  .hero-content {
+    max-width: 600px;
 
+    margin: 0;
+
+    padding: 0 40px;
+  }
+
+  .side {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+
+  /* ART TOP */
+
+  .art-top {
+    padding: 100px 30px 180px;
+  }
+
+  .section-heading {
+    font-size: 36px;
+  }
+
+  .section-text {
+    font-size: 17px;
+  }
+
+
+  /* ART GRID */
+
+  .art-grid-wrapper {
+    margin-top: -100px;
+  }
+
+  .art-grid {
+    max-width: 100%;
+
+    padding: 0 20px;
+  }
+
+  .art-row {
+    width: 100%;
+    height: 650px;
+  }
+
+  .flip-front {
+    width: 50%;
+    height: 650px;
+  }
+
+  .art-new {
+    height: 650px;
+
+    margin-top: 60px;
+  }
+
+
+  /* SLIDESHOW */
+
+  .slideshow-row {
+    height: 650px;
+
+    margin-top: 60px;
+  }
+
+
+  /* ABOUT */
+
+  .content-wrapper {
+    padding: 100px 30px 150px;
+
+    gap: 40px;
+  }
+
+  .artist-text h2,
+  .expertise-section h1 {
+    font-size: 34px;
+  }
+
+  .artist-text h3 {
+    font-size: 28px;
+  }
+
+  .artist-text p {
+    font-size: 17px;
+  }
+}
+
+
+/* ========================================================= */
+/* MOBILE */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* ======================================================= */
+  /* GLOBAL */
+  /* ======================================================= */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: hidden;
+  }
+
+
+  /* ======================================================= */
+  /* HEADER */
+  /* ======================================================= */
+
+  .site-header {
+    height: 70px;
+  }
+
+  .header-inner {
+    width: 100%;
+
+    padding: 0 20px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .home-header .menu-btn {
+    color: #fff;
+  }
+
+  .home-header.scrolled .menu-btn {
+    color: #000;
+  }
+
+
+  /* ======================================================= */
+  /* HERO */
+  /* ======================================================= */
+
+  .hero {
+    width: 100%;
+
+    height: 100svh;
+
+    min-height: 600px;
+
+    background-size: cover;
+
+    background-position: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+
+    padding: 0 25px;
+
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(36px, 10vw, 52px);
+
+    line-height: 1.05;
+  }
+
+  .hero-content p {
+    font-size: clamp(28px, 8vw, 40px);
+
+    line-height: 1.2;
+  }
+
+  .side {
+    margin: 30px 0 0;
+  }
+
+
+  /* ======================================================= */
+  /* ART TOP */
+  /* ======================================================= */
+
+  .art-top {
+    width: 100%;
+
+    padding: 80px 20px 140px;
+  }
+
+  .art-top h2 {
+    width: 100%;
+    max-width: 100%;
+
+    text-align: center;
+  }
+
+  .section-heading {
+    font-size: clamp(28px, 8vw, 38px);
+
+    line-height: 1.2;
+  }
+
+  .art-top p {
+    width: 100%;
+    max-width: 100%;
+
+    text-align: left;
+  }
+
+  .section-text {
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+
+  /* ======================================================= */
+  /* BUTTON */
+  /* ======================================================= */
+
+  .btn-wrapper {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: flex-start;
+
+    gap: 25px;
+  }
+
+  .art-btn {
+    width: 100%;
+
+    display: block;
+
+    padding: 13px 20px;
+
+    font-size: 16px;
+  }
+
+
+  /* ======================================================= */
+  /* ART GRID WRAPPER */
+  /* ======================================================= */
+
+  .art-grid-wrapper {
+    width: 100%;
+
+    margin-top: -80px;
+
+    padding-bottom: 50px;
+  }
+
+
+  /* ======================================================= */
+  /* ART GRID */
+  /* ======================================================= */
+
+  .art-grid {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 0;
+
+    height: auto;
+
+    padding: 0 15px;
+
+    margin: 0;
+  }
+
+
+  /* ======================================================= */
+  /* ART ROW */
+  /* ======================================================= */
+
+  .art-row {
+    width: 100%;
+
+    height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 0;
+  }
+
+
+  /* ======================================================= */
+  /* ARTWORK */
+  /* ======================================================= */
+
+  .flip-front {
+    width: 100%;
+
+    height: 500px;
+
+    margin: 0 0 15px 0;
+
+    background-size: cover;
+
+    background-position: center;
+  }
+
+  .art-new {
+    width: 100%;
+
+    height: 500px;
+
+    margin: 30px 0 0;
+
+    background-size: cover;
+
+    background-position: center;
+  }
+
+
+  /* ======================================================= */
+  /* ARTWORK NAME */
+  /* ======================================================= */
+
+  .artwork-name {
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+    padding: 10px 15px;
+  }
+
+
+  /* ======================================================= */
+  /* SLIDESHOW ROW */
+  /* ======================================================= */
+
+  .slideshow-row {
+    width: 100%;
+
+    height: 500px;
+
+    margin-top: 30px;
+
+    margin-bottom: 20px;
+
+    display: block !important;
+  }
+
+
+  /* ======================================================= */
+  /* SLIDESHOW */
+  /* ======================================================= */
+
+  .art-slideshow {
+    width: 100%;
+
+    height: 100%;
+  }
+
+  .art-slide {
+    width: 100%;
+
+    height: 100%;
+
+    background-size: cover;
+
+    background-position: center;
+  }
+
+
+  /* ======================================================= */
+  /* SLIDESHOW BUTTONS */
+  /* ======================================================= */
+
+  .slide-btn {
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 18px;
+  }
+
+  .slide-prev {
+    left: 10px;
+  }
+
+  .slide-next {
+    right: 10px;
+  }
+
+
+  /* ======================================================= */
+  /* SLIDESHOW DOTS */
+  /* ======================================================= */
+
+  .slide-dots {
+    bottom: 15px;
+
+    gap: 5px;
+
+    max-width: 85%;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .slide-dots::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slide-dot {
+    width: 7px;
+
+    height: 7px;
+  }
+
+  .slide-dot.active {
+    width: 20px;
+  }
+
+
+  /* ======================================================= */
+  /* SLIDESHOW TITLE */
+  /* ======================================================= */
+
+  .art-slide-name {
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    padding: 0 20px;
+  }
+
+
+  /* ======================================================= */
+  /* ABOUT ARTIST */
+  /* ======================================================= */
+
+  .content-wrapper {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 40px;
+
+    padding: 80px 20px 100px;
+  }
+
+  .artist-img {
+    width: 100%;
+
+    flex: none;
+  }
+
+  .artist-img img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+  }
+
+  .artist-text {
+    width: 100%;
+
+    flex: none;
+  }
+
+  .artist-text h2,
+  .expertise-section h1 {
+    font-size: 30px;
+
+    line-height: 1.2;
+  }
+
+  .artist-text h3 {
+    font-size: 25px;
+  }
+
+  .artist-text p {
+    width: 100%;
+
+    max-width: 100%;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+
+  /* ======================================================= */
+  /* HERO LINK */
+  /* ======================================================= */
+
+  .hero-link {
+    font-size: 19px;
+  }
+
+
+  /* ======================================================= */
+  /* FOOTER */
+  /* ======================================================= */
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  .social-icons {
+    gap: 0.8rem;
+  }
+}
+
+
+/* ========================================================= */
+/* SMALL MOBILE */
+/* ========================================================= */
+
+@media (max-width: 480px) {
+
+  /* ======================================================= */
+  /* HERO */
+  /* ======================================================= */
+
+  .hero {
+    min-height: 600px;
+
+    background-position: center;
+  }
+
+  .hero-content {
+    padding: 0 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 30px;
+  }
+
+
+  /* ======================================================= */
+  /* ART TOP */
+  /* ======================================================= */
+
+  .art-top {
+    padding: 70px 18px 120px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .section-text {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+
+  /* ======================================================= */
+  /* ART GRID */
+  /* ======================================================= */
+
+  .art-grid {
+    padding: 0 10px;
+  }
+
+
+  /* ======================================================= */
+  /* ARTWORK */
+  /* ======================================================= */
+
+  .flip-front,
+  .art-new {
+    height: 420px;
+  }
+
+
+  /* ======================================================= */
+  /* SLIDESHOW */
+  /* ======================================================= */
+
+  .slideshow-row {
+    height: 420px;
+  }
+
+  .slide-btn {
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 16px;
+  }
+
+  .slide-prev {
+    left: 8px;
+  }
+
+  .slide-next {
+    right: 8px;
+  }
+
+  .art-slide-name {
+    font-size: 15px;
+  }
+
+
+  /* ======================================================= */
+  /* ABOUT ARTIST */
+  /* ======================================================= */
+
+  .content-wrapper {
+    padding: 70px 18px 90px;
+  }
+
+  .artist-text h2,
+  .expertise-section h1 {
+    font-size: 27px;
+  }
+
+  .artist-text h3 {
+    font-size: 22px;
+  }
+
+  .artist-text p {
+    font-size: 15px;
+  }
+}
+
+
+/* ========================================================= */
+/* VERY SMALL PHONES */
+/* ========================================================= */
+
+@media (max-width: 360px) {
+
+  .hero-content {
+    padding: 0 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 27px;
+  }
+
+  .art-top {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-heading {
+    font-size: 25px;
+  }
+
+  .section-text {
+    font-size: 14px;
+  }
+
+  .flip-front,
+  .art-new {
+    height: 380px;
+  }
+
+  .slideshow-row {
+    height: 380px;
+  }
+
+  .slide-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .slide-prev {
+    left: 5px;
+  }
+
+  .slide-next {
+    right: 5px;
+  }
 }

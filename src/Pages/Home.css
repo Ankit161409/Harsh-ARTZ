@@ -8,13 +8,13 @@ image-resolution: calc();
 .art-row{
     display: flex;
    margin: 0 auto;
-      width: 100%;
+      width: 1520px;
     height: 800px;
     margin-left: -80px;
 }
 
 .flip-front{
-    width: 100%;
+    width: 1000px;
     height: 1080px;
     background-size: cover;
     background-position: center;
