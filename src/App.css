@@ -1611,3 +1611,552 @@ footer {
     min-height: 220px;
   }
 }
+/* =========================================================
+   DESKTOP DEFAULT
+========================================================= */
+
+.art-showcase {
+  width: 100%;
+  overflow: hidden;
+}
+
+.art-grid {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.art-row {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.flip-front {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.art-new {
+  position: relative;
+  width: 100%;
+  height: 900px;
+  margin: 100px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   ARTWORK HOVER
+========================================================= */
+
+.art-hover-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0);
+
+  opacity: 0;
+
+  transition:
+    background 0.35s ease,
+    opacity 0.35s ease;
+
+  pointer-events: none;
+}
+
+.flip-front:hover .art-hover-overlay,
+.art-new:hover .art-hover-overlay {
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 1;
+}
+
+.artwork-name {
+  color: white;
+
+  font-size: 28px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding: 12px 25px;
+
+  transform: translateY(15px);
+  opacity: 0;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.flip-front:hover .artwork-name,
+.art-new:hover .artwork-name {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* =========================================================
+   SLIDESHOW
+========================================================= */
+
+.slideshow-row {
+  display: block !important;
+
+  position: relative;
+
+  width: 100%;
+  height: 800px;
+
+  margin: 100px 0 20px;
+
+  overflow: hidden;
+}
+
+.art-slideshow {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.art-slide {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   SLIDESHOW OVERLAY
+========================================================= */
+
+.art-slide-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0);
+
+  opacity: 0;
+
+  transition:
+    background 0.35s ease,
+    opacity 0.35s ease;
+
+  pointer-events: none;
+}
+
+.art-slide:hover .art-slide-overlay {
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 1;
+}
+
+.art-slide-name {
+  color: white;
+
+  font-size: 28px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  transform: translateY(15px);
+  opacity: 0;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.art-slide:hover .art-slide-name {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* =========================================================
+   SLIDER BUTTONS
+========================================================= */
+
+.slide-btn {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  color: white;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.slide-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.slide-prev {
+  left: 25px;
+}
+
+.slide-next {
+  right: 25px;
+}
+
+
+/* =========================================================
+   SLIDER DOTS
+========================================================= */
+
+.slide-dots {
+  position: absolute;
+
+  left: 50%;
+  bottom: 25px;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  display: flex;
+  gap: 8px;
+}
+
+.slide-dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
+}
+
+.slide-dot.active {
+  width: 28px;
+  border-radius: 10px;
+  background: white;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .art-grid {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .art-row {
+    height: 600px;
+  }
+
+  .flip-front {
+    height: 600px;
+  }
+
+  .art-new {
+    height: 650px;
+    margin-top: 60px;
+  }
+
+  .slideshow-row {
+    height: 600px;
+    margin-top: 60px;
+  }
+
+  .artwork-name,
+  .art-slide-name {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* -----------------------------------------
+     PREVENT HORIZONTAL OVERFLOW
+  ----------------------------------------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .art-showcase {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+
+  /* -----------------------------------------
+     GRID
+  ----------------------------------------- */
+
+  .art-grid {
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 0;
+    padding: 0 10px;
+  }
+
+
+  /* -----------------------------------------
+     ROW
+  ----------------------------------------- */
+
+  .art-row {
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    gap: 10px;
+  }
+
+
+  /* -----------------------------------------
+     TWO DESKTOP IMAGES
+     BECOME ONE-BY-ONE ON MOBILE
+  ----------------------------------------- */
+
+  .flip-front {
+    width: 100%;
+    height: 500px;
+
+    min-height: 0;
+
+    margin: 0;
+
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  /* -----------------------------------------
+     IMAGE 3
+  ----------------------------------------- */
+
+  .art-new {
+    width: 100%;
+
+    height: 500px;
+
+    min-height: 0;
+
+    margin: 30px 0 0;
+
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  /* -----------------------------------------
+     SLIDESHOW
+  ----------------------------------------- */
+
+  .slideshow-row {
+    display: block !important;
+
+    width: 100%;
+
+    height: 500px;
+
+    margin: 40px 0 20px;
+
+    padding: 0;
+
+    overflow: hidden;
+  }
+
+  .art-slideshow {
+    width: 100%;
+    height: 100%;
+  }
+
+  .art-slide {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  /* -----------------------------------------
+     SLIDER BUTTONS
+  ----------------------------------------- */
+
+  .slide-btn {
+    width: 38px;
+    height: 38px;
+
+    font-size: 18px;
+  }
+
+  .slide-prev {
+    left: 10px;
+  }
+
+  .slide-next {
+    right: 10px;
+  }
+
+
+  /* -----------------------------------------
+     SLIDER DOTS
+  ----------------------------------------- */
+
+  .slide-dots {
+    bottom: 15px;
+    gap: 6px;
+  }
+
+  .slide-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .slide-dot.active {
+    width: 22px;
+  }
+
+
+  /* -----------------------------------------
+     TEXT
+  ----------------------------------------- */
+
+  .artwork-name,
+  .art-slide-name {
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    padding: 8px 15px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .art-grid {
+    padding: 0 8px;
+  }
+
+  .art-row {
+    gap: 8px;
+  }
+
+  .flip-front {
+    width: 100%;
+    height: 420px;
+  }
+
+  .art-new {
+    width: 100%;
+    height: 420px;
+    margin-top: 25px;
+  }
+
+  .slideshow-row {
+    height: 420px;
+    margin-top: 30px;
+  }
+
+  .slide-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+
+  .slide-prev {
+    left: 8px;
+  }
+
+  .slide-next {
+    right: 8px;
+  }
+
+}
