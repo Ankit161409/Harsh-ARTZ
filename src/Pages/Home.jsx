@@ -412,78 +412,67 @@ const Home = () => {
         {/* IMAGE 1 + IMAGE 2 */}
         {/* ================================================= */}
 
-        <div className="container-fluid">
-          <div className="row art-row">
+       <div className="container">
+  <div className="row">
 
-            {/* IMAGE 1 */}
+    {/* IMAGE 1 */}
+    <motion.div
+      className="col-12 col-md-6"
+      style={{
+        backgroundImage: `url(${home1})`,
+        height: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      variants={imageVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        once: true,
+        amount: 0.1,
+      }}
+      transition={imageTransition}
+    >
+      <div className="art-hover-overlay">
+        <span className="artwork-name">
+          Charcoal Portrait
+        </span>
+      </div>
+    </motion.div>
 
-            <motion.div
-              className="col-md-6 flip-front"
+    {/* IMAGE 2 */}
+    <motion.div
+      className="col-12 col-md-6"
+      style={{
+        backgroundImage: `url(${home2})`,
+        height: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      variants={imageVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        once: true,
+        amount: 0.1,
+      }}
+      transition={{
+        ...imageTransition,
+        delay: 0.15,
+      }}
+    >
+      <div className="art-hover-overlay">
+        <span className="artwork-name">
+          Mixed Media Artwork
+        </span>
+      </div>
+    </motion.div>
 
-              style={{
-                backgroundImage: `url(${home1})`,
-              }}
+  </div>
+</div>
 
-              variants={imageVariants}
-
-              initial="hidden"
-
-              whileInView="visible"
-
-              viewport={{
-                once: true,
-                amount: 0.1,
-              }}
-
-              transition={imageTransition}
-            >
-
-              <div className="art-hover-overlay">
-                <span className="artwork-name">
-                  Charcoal Portrait
-                </span>
-              </div>
-
-            </motion.div>
-
-
-            {/* IMAGE 2 */}
-
-            <motion.div
-              className="col-md-6 flip-front"
-
-              style={{
-                backgroundImage: `url(${home2})`,
-              }}
-
-              variants={imageVariants}
-
-              initial="hidden"
-
-              whileInView="visible"
-
-              viewport={{
-                once: true,
-                amount: 0.1,
-              }}
-
-              transition={{
-                ...imageTransition,
-                delay: 0.15,
-              }}
-            >
-
-              <div className="art-hover-overlay">
-                <span className="artwork-name">
-                  Mixed Media Artwork
-                </span>
-              </div>
-
-            </motion.div>
-
-          </div>
-
-        </div>
 
 
         {/* ================================================= */}
