@@ -492,10 +492,10 @@ const Home = () => {
 
         <div className="container ">
 
-          <div className="row  ">
+          <div className="row">
 
             <motion.div
-              className="col-md-6"
+              className="col-md-12"
 
               style={{
                 backgroundImage: `url(${home3})`,
