@@ -1,42 +1,32 @@
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-:root {
-  --satoshi-font: "Satoshi", sans-serif;
-  --jost-font: "Jost", sans-serif;
-  --yellow-bg: #faf2ea;
-  --text-clr: #888888;
-  --btn-bg: #69727d;
+:root{
+ --satoshi-font:"Satoshi", sans-serif;;
+ --jost-font:'Jost', sans-serif;
+ --yellow-bg: #FAF2EA;
+ --text-clr: #888888;
+ --btn-bg: #69727d;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
+
+ 
+  margin: 0 auto;
   padding: 0;
+
 }
 
-html {
-  width: 100%;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+body{
   background-color: #9a5555;
+  margin: 0 auto;
 }
-
-img {
-  max-width: 100%;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
 
 .site-header {
   position: fixed;
@@ -46,7 +36,7 @@ img {
   height: 80px;
   z-index: 1000;
   background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
   transition: all 0.35s ease;
 }
 
@@ -59,20 +49,19 @@ img {
 .home-header.scrolled {
   position: fixed;
   background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .site-header.scrolled {
   position: fixed;
-  background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff; 
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .header-inner {
-  width: 100%;
   max-width: 1400px;
   height: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 40px;
 
   display: flex;
@@ -111,7 +100,7 @@ img {
   position: absolute;
   left: 0;
   bottom: -6px;
-  width: 0;
+  width: 0%;
   height: 2px;
   background: #fff;
   transition: width 0.3s ease;
@@ -136,7 +125,7 @@ img {
 }
 
 .site-header.scrolled .main-nav a::after {
-  background: #000;
+  background: #000; 
 }
 
 .menu-btn {
@@ -148,15 +137,10 @@ img {
   color: #000;
 }
 
-
-/* =========================================================
-   SIDEBAR
-========================================================= */
-
 .sidebar-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4);
   z-index: 1999;
 }
 
@@ -166,7 +150,7 @@ img {
   left: 0;
   width: 280px;
   height: 100vh;
-  background: #222;
+  background: #222222;
   z-index: 2000;
   padding: 30px 24px;
   display: flex;
@@ -201,20 +185,13 @@ img {
   font-size: 14px;
 }
 
-
-/* =========================================================
-   HERO
-========================================================= */
-
 .hero {
+  height: 100vh;
   width: 100%;
-  min-height: 100vh;
-
-  background-image: url("./Images/additionalImages/poster1.png");
+  background-image: url("./Images/additionalImages/poster1.png"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   position: relative;
 
   display: grid;
@@ -227,16 +204,21 @@ img {
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
 }
-
+.background
+{
+   /* background-image: url("./Images/home/img\ \(30\).jpeg");  */
+    
+      background-image: url("https://picsum.photos/1920/1080"); 
+ 
+}
 .hero-content {
   position: relative;
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  margin: 0 auto;
-
   text-align: left;
   color: #f7f6f6;
+  max-width: 600px;
+  padding: 0px;
+  margin-right: 600px;
+ 
 }
 
 .hero-content h1 {
@@ -244,66 +226,66 @@ img {
   font-weight: 800;
   margin-bottom: 16px;
   font-family: var(--satoshi-font);
+  
+  /* font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal; */
+
   text-transform: uppercase;
+  
 }
+.side
+{
 
-.hero-content p {
-  font-size: clamp(22px, 2vw, 40px);
-  font-weight: 400;
-  opacity: 0.9;
-  font-family: "Bonheur Royale", cursive;
-}
-
-.side {
-  margin-top: 100px;
+  margin-top:100px;
   margin-left: 650px;
-  margin-bottom: 0;
-  font-family: "Bonheur Royale", cursive;
+  margin-bottom: 0px;
+       font-family: "Bonheur Royale", cursive;
   font-weight: 400;
+  font-style: normal;
+}
+.hero-content p {
+  font-size: clamp(40px, 2vw, 22px);
+  font-weight: 500;
+  opacity: 0.9;
+  /* font-family: var(--jost-font);
+  font-style: italic; */
+     font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.background {
-  background-image: url("https://picsum.photos/1920/1080");
-}
 
-.left {
+
+
+.left
+{
   text-align: left;
 }
 
-
-/* =========================================================
-   ART SHOWCASE
-========================================================= */
-
 .art-showcase {
   position: relative;
-  width: 100%;
-  overflow: hidden;
 }
 
 .art-top-bg {
-  width: 100%;
   background: var(--yellow-bg);
 }
 
 .art-top {
-  width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
-
+  margin: auto;
   text-align: center;
-
   padding: 120px 40px 200px;
 }
 
-.section-heading {
+.section-heading{
   font-family: var(--jost-font);
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.art-top h2 {
+.art-top h2{
   text-align: left;
   max-width: 550px;
 }
@@ -313,20 +295,19 @@ img {
   text-align: left;
 }
 
-.section-text {
+.section-text{
   font-family: var(--satoshi-font);
   color: var(--text-clr);
-  font-size: 18px;
+   font-size: 18px;
   line-height: 1.7;
-  font-weight: 300;
+    font-weight: 300;
 }
 
-.btn-wrapper {
-  width: 100%;
+.btn-wrapper{
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 30px;
+  margin: auto;
 }
 
 .art-btn {
@@ -340,385 +321,73 @@ img {
   font-weight: 300;
 }
 
-
-/* =========================================================
-   ART GRID
-========================================================= */
-
-.art-grid {
-  width: 100%;
-  max-width: 1400px;
-
-  min-height: 800px;
-
-  margin: 0 auto;
-  padding: 0 20px;
-
-  display: flex;
-  align-items: stretch;
-}
-
-
-/* =========================================================
-   ART ROW
-========================================================= */
-
-.art-row {
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-
-  gap: 20px;
-
-  margin: 0;
-}
-
-
-/* =========================================================
-   TWO ARTWORK IMAGES
-========================================================= */
-
-.flip-front {
+.art-grid-wrapper {
   position: relative;
-
-  width: 50%;
-  height: 800px;
-
-  overflow: hidden;
-
-  margin-top: 40px;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border: 1px solid red;
+  margin-top: -140px; 
+  padding-bottom: 100px;
 }
 
-
-/* =========================================================
-   SINGLE LARGE ARTWORK
-========================================================= */
-
-.art-new {
-  position: relative;
-
-  width: 100%;
-  height: 800px;
-
-  margin: 140px 0 0;
-
-  overflow: hidden;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-/* =========================================================
-   ARTWORK HOVER
-========================================================= */
-
-.art-hover-overlay {
+.flip-back {
   position: absolute;
   inset: 0;
-
+  background: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: rgba(0, 0, 0, 0);
-
-  opacity: 0;
-
-  transition:
-    background 0.35s ease,
-    opacity 0.35s ease;
-
-  pointer-events: none;
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
 }
 
-.flip-front:hover .art-hover-overlay,
-.art-new:hover .art-hover-overlay {
-  background: rgba(0, 0, 0, 0.35);
-  opacity: 1;
-}
-
-.artwork-name {
-  color: white;
-
-  font-size: 28px;
-  font-weight: 600;
-
-  letter-spacing: 2px;
-  text-align: center;
+.flip-back h3 {
+  font-family: var(--jost-font);
+  font-size: 34px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-
-  padding: 12px 25px;
-
-  transform: translateY(15px);
-  opacity: 0;
-
-  transition:
-    transform 0.35s ease,
-    opacity 0.35s ease;
-}
-
-.flip-front:hover .artwork-name,
-.art-new:hover .artwork-name {
-  transform: translateY(0);
-  opacity: 1;
+  color: #fff;
+  font-weight: 300;
 }
 
 
-/* =========================================================
-   SLIDESHOW ROW
-========================================================= */
-
-.slideshow-row {
-  display: block !important;
-
-  position: relative;
-
-  width: 100%;
-
-  overflow: hidden;
-
-  margin-top: 140px;
-  margin-bottom: 0;
-
-  height: 850px;
-}
-
-
-/* =========================================================
-   SLIDESHOW
-========================================================= */
-
-.art-slideshow {
-  position: relative;
-
-  width: 100%;
-  height: 100%;
-
-  overflow: hidden;
-}
-
-.art-slide {
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-/* =========================================================
-   SLIDESHOW OVERLAY
-========================================================= */
-
-.art-slide-overlay {
-  position: absolute;
-  inset: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: rgba(0, 0, 0, 0);
-
-  opacity: 0;
-
-  transition:
-    background 0.35s ease,
-    opacity 0.35s ease;
-
-  pointer-events: none;
-}
-
-.art-slide:hover .art-slide-overlay {
-  background: rgba(0, 0, 0, 0.35);
-  opacity: 1;
-}
-
-.art-slide-name {
-  color: white;
-
-  font-size: 28px;
-  font-weight: 600;
-
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-  transform: translateY(15px);
-  opacity: 0;
-
-  transition:
-    transform 0.35s ease,
-    opacity 0.35s ease;
-}
-
-.art-slide:hover .art-slide-name {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-
-/* =========================================================
-   SLIDESHOW BUTTONS
-========================================================= */
-
-.slide-btn {
-  position: absolute;
-
-  top: 50%;
-  transform: translateY(-50%);
-
-  z-index: 10;
-
-  width: 50px;
-  height: 50px;
-
-  border: none;
-  border-radius: 50%;
-
-  background: rgba(0, 0, 0, 0.45);
-
-  color: white;
-
-  font-size: 24px;
-
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition:
-    background 0.3s ease,
-    transform 0.3s ease;
-}
-
-.slide-btn:hover {
-  background: rgba(0, 0, 0, 0.75);
-  transform: translateY(-50%) scale(1.08);
-}
-
-.slide-prev {
-  left: 25px;
-}
-
-.slide-next {
-  right: 25px;
-}
-
-
-/* =========================================================
-   SLIDE DOTS
-========================================================= */
-
-.slide-dots {
-  position: absolute;
-
-  left: 50%;
-  bottom: 25px;
-
-  transform: translateX(-50%);
-
-  z-index: 10;
-
-  display: flex;
-  gap: 8px;
-}
-
-.slide-dot {
-  width: 9px;
-  height: 9px;
-
-  padding: 0;
-
-  border: none;
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.5);
-
-  cursor: pointer;
-
-  transition:
-    width 0.3s ease,
-    background 0.3s ease;
-}
-
-.slide-dot.active {
-  width: 28px;
-  border-radius: 10px;
-  background: white;
-}
-
-.slide-dot:hover {
-  background: white;
-}
-
-
-/* =========================================================
-   ABOUT ARTIST
-========================================================= */
-
-.about-artist-section {
+.about-artist-section{
   background: #000;
 }
 
-.content-wrapper {
-  width: 100%;
+.content-wrapper{
   max-width: 1400px;
-
-  margin: 0 auto;
-
+  margin: auto;
   display: flex;
   flex-direction: row;
-
   align-items: center;
-
   gap: 4rem;
-
   padding: 120px 40px 200px;
 }
 
-.artist-img {
-  position: relative;
-  flex: 0 0 45%;
+.artist-img{
+position: relative;
+flex: 0 0 45%;  
 }
 
-.artist-img img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+.artist-img img{
+ width: 100%;
+ height: auto;
+ object-fit: contain;
 }
 
-.artist-text {
+.artist-text{
   display: flex;
   flex-direction: column;
-
   text-align: left;
-
   color: #fff;
-
-  flex: 0 0 55%;
+    flex: 0 0 55%;
 }
 
-.artist-text h2,
-.expertise-section h1 {
+.artist-text h2,.expertise-section h1{
   font-family: var(--jost-font);
   font-size: 40px;
   font-weight: 500;
 
+ 
   background: linear-gradient(
     90deg,
     #6a5cff 0%,
@@ -731,751 +400,101 @@ img {
   background-clip: text;
 }
 
-.artist-text h3 {
+.artist-text h3{
   font-size: 34px;
-
-  position: relative;
-
-  display: inline-flex;
+   position: relative;
+   display: inline-flex;   
   align-self: flex-start;
-
   font-family: var(--satoshi-font);
-
   letter-spacing: 2px;
   font-weight: 500;
 }
 
-.artist-text h3::after {
-  content: "";
-
+.artist-text h3::after{
+ content: "";
   position: absolute;
-
   left: 0;
-  bottom: -6px;
-
+  bottom: -6px;   
   width: 100%;
   height: 1px;
-
   background: #fff;
 }
 
-.artist-text p {
+.artist-text p{
   font-family: var(--satoshi-font);
-
   color: var(--text-clr);
-
   line-height: 1.7;
-
   font-size: 18px;
-
   font-weight: 300;
-
   max-width: 500px;
 }
 
-.hero-link {
+.hero-link{
   font-size: 22px;
-
   font-family: var(--jost-font);
-
-  color: var(--text-clr);
-
+   color: var(--text-clr);
   line-height: 1.7;
-
   margin-bottom: 1rem;
-
   font-weight: 400;
-
   letter-spacing: 1px;
-
-  position: relative;
-
-  display: inline-flex;
-
+    position: relative;
+  display: inline-flex;  
   align-self: flex-start;
-
   text-decoration: none;
 }
-
+.white
+{
+  color: white;
+}
+.black
+{
+  background-color: black;
+}
 .hero-link::after {
   content: "";
-
   position: absolute;
-
   left: 0;
-  bottom: -6px;
-
+  bottom: -6px;   
   width: 100%;
   height: 1px;
-
   background: var(--text-clr);
 }
 
-.white {
-  color: white;
-}
-
-.black {
-  background-color: black;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-  background-color: #222;
+footer{
+  background-color: #222222;
   padding: 40px;
   text-align: center;
 }
 
-.social-icons {
+.social-icons{
   display: flex;
   flex-direction: row;
-
   gap: 1rem;
-
   align-items: center;
   justify-content: center;
-
-  margin: 0 auto;
+  margin: auto;
 }
 
-.spacing-div {
+.spacing-div{
   margin-top: 8rem;
 }
 
 
-/* =========================================================
-   TABLET
-   768px - 1024px
-========================================================= */
 
-@media (max-width: 1024px) {
 
-  /* HEADER */
-
-  .header-inner {
-    padding: 0 25px;
-  }
-
-  .main-nav {
-    gap: 20px;
-  }
-
-  .main-nav a {
-    font-size: 16px;
-  }
-
-
-  /* HERO */
-
-  .hero-content {
-    max-width: 550px;
-    margin: 0 auto;
-    padding: 30px;
-  }
-
-  .side {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-
-
-  /* ART TOP */
-
-  .art-top {
-    padding: 100px 30px 150px;
-  }
-
-
-  /* ARTWORK */
-
-  .art-grid {
-    min-height: 650px;
-    padding: 0 15px;
-  }
-
-  .art-row {
-    gap: 15px;
-  }
-
-  .flip-front {
-    width: 50%;
-    height: 650px;
-  }
-
-  .art-new {
-    height: 650px;
-    margin-top: 100px;
-  }
-
-  .slideshow-row {
-    height: 650px;
-    margin-top: 100px;
-  }
-
-
-  /* ABOUT */
-
-  .content-wrapper {
-    padding: 100px 30px 150px;
-    gap: 2rem;
-  }
-
-  .artist-text h2,
-  .expertise-section h1 {
-    font-size: 34px;
-  }
-
-  .artist-text h3 {
-    font-size: 28px;
-  }
-}
-
-
-/* =========================================================
-   MOBILE
-   767px AND BELOW
-========================================================= */
-
-@media (max-width: 767px) {
-
-  /* =======================================================
-     GLOBAL MOBILE
-  ======================================================= */
-
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-
-  /* =======================================================
-     HEADER
-  ======================================================= */
-
-  .site-header {
-    height: 65px;
-  }
-
-  .header-inner {
-    height: 65px;
-    padding: 0 18px;
-  }
-
-  .logo a {
-    font-size: 18px;
-  }
-
-  .main-nav {
-    display: none;
-  }
-
-  .menu-btn {
-    display: block;
-    color: #fff;
-  }
-
-  .site-header.scrolled .menu-btn {
-    color: #000;
-  }
-
-
-  /* =======================================================
-     HERO
-  ======================================================= */
-
-  .hero {
-    min-height: 100svh;
-    width: 100%;
-
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero-content {
-    width: 100%;
-    max-width: 100%;
-
-    margin: 0;
-    padding: 25px;
-
-    text-align: left;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(32px, 10vw, 48px);
-    line-height: 1.05;
-    margin-bottom: 15px;
-  }
-
-  .hero-content p {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .side {
-    margin: 30px 0 0;
-  }
-
-
-  /* =======================================================
-     ART TOP
-  ======================================================= */
-
-  .art-top {
-    width: 100%;
-    max-width: 100%;
-
-    padding: 70px 20px 100px;
-  }
-
-  .section-heading {
-    width: 100%;
-
-    font-size: 30px;
-    line-height: 1.2;
-
-    margin-bottom: 25px;
-  }
-
-  .art-top h2 {
-    max-width: 100%;
-    text-align: left;
-  }
-
-  .art-top p {
-    max-width: 100%;
-  }
-
-  .section-text {
-    width: 100%;
-
-    font-size: 16px;
-    line-height: 1.7;
-
-    text-align: left;
-  }
-
-
-  /* =======================================================
-     TEXT + BUTTON
-  ======================================================= */
-
-  .btn-wrapper {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    gap: 25px;
-  }
-
-  .art-btn {
-    padding: 11px 20px;
-    font-size: 15px;
-  }
-
-
-  /* =======================================================
-     ART GRID
-  ======================================================= */
-
-  .art-grid {
-    width: 100%;
-    max-width: 100%;
-
-    min-height: 0;
-    height: auto;
-
-    display: block;
-
-    margin: 0;
-    padding: 0 12px;
-  }
-
-
-  /* =======================================================
-     ART ROW
-     
-     IMPORTANT:
-     Desktop = 2 images side by side
-     Mobile = 1 image per row
-  ======================================================= */
-
-  .art-row {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 20px;
-
-    margin: 0;
-  }
-
-
-  /* =======================================================
-     MOBILE ARTWORK IMAGES
-     
-     contain = DON'T CUT THE ARTWORK
-  ======================================================= */
-
-  .flip-front {
-    width: 100%;
-    height: 500px;
-
-    flex: none;
-
-    margin: 30px 0 0;
-
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-color: #fff;
-
-    border: none;
-  }
-
-
-  /* =======================================================
-     SINGLE LARGE ARTWORK
-  ======================================================= */
-
-  .art-new {
-    width: 100%;
-    height: 500px;
-
-    margin: 60px 0 0;
-
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-color: #fff;
-  }
-
-
-  /* =======================================================
-     ARTWORK TITLE
-  ======================================================= */
-
-  .artwork-name {
-    font-size: 18px;
-
-    letter-spacing: 1px;
-
-    padding: 10px 15px;
-  }
-
-
-  /* =======================================================
-     MOBILE HOVER/TAP OVERLAY
-  ======================================================= */
-
-  .flip-front:active .art-hover-overlay,
-  .art-new:active .art-hover-overlay {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.35);
-  }
-
-
-  /* =======================================================
-     SLIDESHOW
-  ======================================================= */
-
-  .slideshow-row {
-    width: 100%;
-
-    height: 500px;
-
-    margin-top: 60px;
-    margin-bottom: 0;
-
-    padding: 0;
-
-    display: block !important;
-  }
-
-  .art-slideshow {
-    width: 100%;
-    height: 100%;
-  }
-
-  .art-slide {
-    width: 100%;
-    height: 100%;
-
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-color: #000;
-  }
-
-
-  /* =======================================================
-     SLIDESHOW BUTTONS
-  ======================================================= */
-
-  .slide-btn {
-    width: 38px;
-    height: 38px;
-
-    font-size: 18px;
-  }
-
-  .slide-prev {
-    left: 10px;
-  }
-
-  .slide-next {
-    right: 10px;
-  }
-
-
-  /* =======================================================
-     SLIDESHOW TITLE
-  ======================================================= */
-
-  .art-slide-name {
-    font-size: 18px;
-
-    letter-spacing: 1px;
-
-    text-align: center;
-
-    padding: 10px;
-  }
-
-
-  /* =======================================================
-     DOTS
-  ======================================================= */
-
-  .slide-dots {
-    bottom: 15px;
-    gap: 6px;
-  }
-
-  .slide-dot {
-    width: 7px;
-    height: 7px;
-  }
-
-  .slide-dot.active {
-    width: 22px;
-  }
-
-
-  /* =======================================================
-     ABOUT ARTIST
-  ======================================================= */
-
-  .content-wrapper {
-    width: 100%;
-    max-width: 100%;
-
-    padding: 70px 20px 100px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 40px;
-  }
-
-  .artist-img {
-    width: 100%;
-    flex: none;
-  }
-
-  .artist-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .artist-text {
-    width: 100%;
-    flex: none;
-
-    text-align: left;
-  }
-
-  .artist-text h2,
-  .expertise-section h1 {
-    font-size: 30px;
-    line-height: 1.2;
-  }
-
-  .artist-text h3 {
-    font-size: 25px;
-  }
-
-  .artist-text p {
-    width: 100%;
-    max-width: 100%;
-
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-  .hero-link {
-    font-size: 19px;
-  }
-
-
-  /* =======================================================
-     FOOTER
-  ======================================================= */
-
-  footer {
-    padding: 30px 20px;
-  }
-
-  .social-icons {
-    flex-wrap: wrap;
-  }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   480px AND BELOW
-========================================================= */
-
-@media (max-width: 480px) {
-
-  .header-inner {
-    padding: 0 15px;
-  }
-
-  .logo a {
-    font-size: 16px;
-  }
-
-
-  /* HERO */
-
-  .hero-content {
-    padding: 20px;
-  }
-
-  .hero-content h1 {
-    font-size: 34px;
-  }
-
-  .hero-content p {
-    font-size: 24px;
-  }
-
-
-  /* ART SECTION */
-
-  .art-top {
-    padding: 60px 16px 80px;
-  }
-
-  .section-heading {
-    font-size: 27px;
-  }
-
-  .section-text {
-    font-size: 15px;
-  }
-
-
-  /* ARTWORK */
-
-  .art-grid {
-    padding: 0 8px;
-  }
-
-  .flip-front {
-    height: 420px;
-  }
-
-  .art-new {
-    height: 420px;
-    margin-top: 50px;
-  }
-
-
-  /* SLIDESHOW */
-
-  .slideshow-row {
-    height: 420px;
-    margin-top: 50px;
-  }
-
-  .slide-btn {
-    width: 34px;
-    height: 34px;
-    font-size: 16px;
-  }
-
-  .slide-prev {
-    left: 8px;
-  }
-
-  .slide-next {
-    right: 8px;
-  }
-
-
-  /* ABOUT */
-
-  .content-wrapper {
-    padding: 60px 16px 80px;
-  }
-
-  .artist-text h2,
-  .expertise-section h1 {
-    font-size: 27px;
-  }
-
-  .artist-text h3 {
-    font-size: 22px;
-  }
-
-  .artist-text p {
-    font-size: 15px;
-  }
-
-}
-
-
-/* =========================================================
-   VERY SMALL PHONES
-   360px AND BELOW
-========================================================= */
-
-@media (max-width: 360px) {
-
-  .flip-front,
-  .art-new {
-    height: 360px;
-  }
-
-  .slideshow-row {
-    height: 360px;
-  }
-
-  .section-heading {
-    font-size: 24px;
-  }
-
-  .section-text {
-    font-size: 14px;
-  }
+ 
+
+ .art-grid {
+ 
+  height:1000px;
+   
+  display: grid;
+   
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;   
+  padding: 0 20px;
+  box-sizing: border-box; 
+  
 
 }
