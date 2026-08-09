@@ -412,66 +412,67 @@ const Home = () => {
         {/* IMAGE 1 + IMAGE 2 */}
         {/* ================================================= */}
 
-       <div className="container-fluid">
-  <div className="row">
+        <div className="container  ">
+          <h1 className="text-center mt-4 mb-4 side  ">My Artwork</h1>
+          <div className="row">
 
-    {/* IMAGE 1 */}
-    <motion.div
-      className="col-12 col-md-6"
-      style={{
-        backgroundImage: `url(${home1})`,
-        height: "100vh",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-      variants={imageVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{
-        once: true,
-        amount: 0.1,
-      }}
-      transition={imageTransition}
-    >
-      <div className="art-hover-overlay">
-        <span className="artwork-name">
-          Charcoal Portrait
-        </span>
-      </div>
-    </motion.div>
+            {/* IMAGE 1 */}
+            <motion.div
+              className="  col-md-6 flip-front"
+              style={{
+                backgroundImage: `url(${home1})`,
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+              variants={imageVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{
+                once: true,
+                amount: 0.1,
+              }}
+              transition={imageTransition}
+            >
+              <div className="art-hover-overlay">
+                <span className="artwork-name">
+                  Charcoal Portrait
+                </span>
+              </div>
+            </motion.div>
 
-    {/* IMAGE 2 */}
-    <motion.div
-      className="col-12 col-md-6"
-      style={{
-        backgroundImage: `url(${home2})`,
-        height: "100vh",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-      variants={imageVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{
-        once: true,
-        amount: 0.1,
-      }}
-      transition={{
-        ...imageTransition,
-        delay: 0.15,
-      }}
-    >
-      <div className="art-hover-overlay">
-        <span className="artwork-name">
-          Mixed Media Artwork
-        </span>
-      </div>
-    </motion.div>
+            {/* IMAGE 2 */}
+            <motion.div
+              className="  col-md-6 flip-front"
+              style={{
+                backgroundImage: `url(${home2})`,
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+              variants={imageVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{
+                once: true,
+                amount: 0.1,
+              }}
+              transition={{
+                ...imageTransition,
+                delay: 0.15,
+              }}
+            >
+              <div className="art-hover-overlay">
+                <span className="artwork-name">
+                  Mixed Media Artwork
+                </span>
+              </div>
+            </motion.div>
 
-  </div>
-</div>
+          </div>
+        </div>
 
 
 
@@ -479,15 +480,20 @@ const Home = () => {
         {/* IMAGE 3 */}
         {/* ================================================= */}
 
-        <div className="container ">
+        <div className="container mt-3">
 
           <div className="row">
 
             <motion.div
-              className="col-md-12"
+              className="col-md-12 flip-front"
 
               style={{
                 backgroundImage: `url(${home3})`,
+
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
 
               variants={imageVariants}
@@ -521,17 +527,21 @@ const Home = () => {
         {/* IMAGE 4 + IMAGE 5 */}
         {/* ================================================= */}
 
-        <div className="art-grid">
+        <div className="container mt-3">
 
-          <div className="art-row">
+          <div className="row">
 
             {/* IMAGE 4 */}
 
             <motion.div
-              className="flip-front"
+              className="col-md-6 flip-front"
 
               style={{
                 backgroundImage: `url(${home4})`,
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
 
               variants={imageVariants}
@@ -560,10 +570,14 @@ const Home = () => {
             {/* IMAGE 5 */}
 
             <motion.div
-              className="flip-front"
+              className="col-md-6 flip-front"
 
               style={{
                 backgroundImage: `url(${home5})`,
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
               }}
 
               variants={imageVariants}
@@ -600,12 +614,18 @@ const Home = () => {
         {/* HOME PAINTINGS SLIDESHOW */}
         {/* ================================================= */}
 
-        <div className="art-grid">
+        <div className="container mt-3">
 
-          <div className="art-row slideshow-row">
-
-            <ArtworkSlideshow />
-
+          <div className="row slideshow-row">
+            <div className="col-md-12"
+              style={{
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}>
+              <ArtworkSlideshow />
+            </div>
           </div>
 
         </div>
