@@ -412,7 +412,7 @@ const Home = () => {
         {/* IMAGE 1 + IMAGE 2 */}
         {/* ================================================= */}
 
-        <div className="container-fluid  art-grid">
+        <div className="container-fluid">
           <div className="row art-row">
 
             {/* IMAGE 1 */}
@@ -490,12 +490,12 @@ const Home = () => {
         {/* IMAGE 3 */}
         {/* ================================================= */}
 
-        <div className="art-grid">
+        <div className="container ">
 
-          <div className="art-row">
+          <div className="row  ">
 
             <motion.div
-              className="art-new"
+              className="col-md-6"
 
               style={{
                 backgroundImage: `url(${home3})`,
