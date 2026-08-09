@@ -412,7 +412,7 @@ const Home = () => {
         {/* IMAGE 1 + IMAGE 2 */}
         {/* ================================================= */}
 
-       <div className="container">
+       <div className="container-fluid">
   <div className="row">
 
     {/* IMAGE 1 */}
