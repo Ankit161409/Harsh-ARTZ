@@ -43,7 +43,7 @@ import { Charcoal } from "../ImportImages/CharcoalImport.js";
                             }}
                             transition={{ duration: 1, ease: "easeOut" }}
                           >
-                          Charcoal Arts
+                         
                            
                           </motion.h1>
                         </motion.div>
@@ -61,6 +61,7 @@ import { Charcoal } from "../ImportImages/CharcoalImport.js";
           },
         }}
       >
+        <h1 className="font"> Charcoal <br/> Arts </h1>
          
         {Charcoal.map((painting, index) => (
           <motion.div    style={{ color: "black", textAlign:"left"}}

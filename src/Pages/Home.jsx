@@ -412,7 +412,7 @@ const Home = () => {
         {/* IMAGE 1 + IMAGE 2 */}
         {/* ================================================= */}
 
-        <div className="container  ">
+        <div className="container-fluid ">
           <h1 className="text-center mt-4 mb-4 side  ">My Artwork</h1>
           <div className="row">
 
@@ -480,7 +480,7 @@ const Home = () => {
         {/* IMAGE 3 */}
         {/* ================================================= */}
 
-        <div className="container mt-3">
+        <div className="container-fluid mt-3">
 
           <div className="row">
 
@@ -527,7 +527,7 @@ const Home = () => {
         {/* IMAGE 4 + IMAGE 5 */}
         {/* ================================================= */}
 
-        <div className="container mt-3">
+        <div className="container-fluid mt-3">
 
           <div className="row">
 
@@ -614,7 +614,7 @@ const Home = () => {
         {/* HOME PAINTINGS SLIDESHOW */}
         {/* ================================================= */}
 
-        <div className="container mt-3">
+        <div className="container-fluid mt-3">
 
           <div className="row slideshow-row">
             <div className="col-md-12"
@@ -622,7 +622,7 @@ const Home = () => {
                 height: "100vh",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
+                backgroundRepeat: "no-repeat",   
               }}>
               <ArtworkSlideshow />
             </div>

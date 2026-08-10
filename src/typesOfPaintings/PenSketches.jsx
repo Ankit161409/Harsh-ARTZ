@@ -43,7 +43,7 @@ import { Pen } from "../ImportImages/PenSketchesImport.js";
                             }}
                             transition={{ duration: 1, ease: "easeOut" }}
                           >
-                          Pen Sketches
+                      
                            
                           </motion.h1>
                         </motion.div>
@@ -61,7 +61,7 @@ import { Pen } from "../ImportImages/PenSketchesImport.js";
           },
         }}
       >
-         
+          <h1 className="font">Pen sketches</h1>
         {Pen.map((painting, index) => (
           <motion.div    style={{ color: "black", textAlign:"left"}}
             key={painting.id || index}

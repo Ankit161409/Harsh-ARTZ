@@ -42,7 +42,7 @@ const Digital = () => {
                         }}
                         transition={{ duration: 1, ease: "easeOut" }}
                       >
-                      Digital Arts
+                     
                        
                       </motion.h1>
                     </motion.div>
@@ -59,7 +59,7 @@ const Digital = () => {
             transition: { staggerChildren: 0.1 },
           },
         }}
-      >
+      > <h1 className="font">Digital Arts</h1>
         {digitalArt.map((painting, index) => (
           <motion.div
             key={painting.id || index}

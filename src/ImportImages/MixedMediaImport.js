@@ -6,14 +6,25 @@ import img4 from '../Images/MixedMedia/image7.png';
 
  
 
-
-export const Mixed=
-[
-
-   { title: "Mixde media", img: img1, description: "hello", price: "20000 rupees" },
-    { title: "Mixed media", img: img2, description: "hello", price: "20000 rupees" },
-    { title: "Mixed Media", img: img3, description: "hello", price: "20000 rupees" },
-     { title: "Mixed Media", img: img4, description: "hello", price: "20000 rupees" },
-    
-
+export const Mixed = [
+  {
+    title: "Mixed Media 1",
+    img: img1,
+    artist: "Harsh ARTZ"
+  },
+  {
+    title: "Mixed Media 2",
+    img: img2,
+    artist: "Harsh ARTZ"
+  },
+  {
+    title: "Mixed Media 3",
+    img: img3,
+    artist: "Harsh ARTZ"
+  },
+  {
+    title: "Mixed Media 4",
+    img: img4,
+    artist: "Harsh ARTZ"
+  }
 ];

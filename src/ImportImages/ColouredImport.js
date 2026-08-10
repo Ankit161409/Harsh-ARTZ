@@ -8,60 +8,45 @@ import img7 from '../Images/ColouredPencil/image7.jpeg';
 import img8 from '../Images/ColouredPencil/image8.jpeg';
 import img9 from '../Images/ColouredPencil/image9.jpeg';
 
-
-export const Coloured=
-
-
-     [
+export const Coloured = [
   {
-    title: "Water Color 1",
+    title: "Coloured Pencil 1",
     img: img2,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   },
   {
-    title: "Water Color 2",
+    title: "Coloured Pencil 2",
     img: img3,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   },
   {
-    title: "Water Color 3",
+    title: "Coloured Pencil 3",
     img: img4,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   },
   {
-    title: "Water Color 4",
+    title: "Coloured Pencil 4",
     img: img5,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   },
   {
-    title: "Water Color 5",
+    title: "Coloured Pencil 5",
     img: img6,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   },
   {
-    title: "Water Color 6",
+    title: "Coloured Pencil 6",
     img: img7,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   },
   {
-    title: "Water Color 7",
+    title: "Coloured Pencil 7",
     img: img8,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   },
   {
-    title: "Water Color 8",
+    title: "Coloured Pencil 8",
     img: img9,
-    description: "hello",
-    price: "20000 rupees"
+    artist: "Harsh ARTZ"
   }
 ];
-
-    
- 

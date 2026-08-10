@@ -2,8 +2,7 @@
 
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { homePaintings } from "../ArtGalleryData";
-import { Paintings } from "../ImportImages/PaintingsImport";
+import { homePaintings } from "../ArtGalleryData"; 
 import  {Charcoal}  from "../ImportImages/CharcoalImport.js";
 import  {digitalArt}  from "../ImportImages/DigitalImport.js";
 import  {Water}  from "../ImportImages/WaterColorPaintingImport.js";
@@ -15,8 +14,7 @@ import  { Pen}  from "../ImportImages/PenSketchesImport.js";
 
 
 
-// import { Acrylic } from "../ImportImages/AcrylicImport";
-
+ 
 import "./ArtGallery.css";
 import { motion } from "framer-motion";
 
@@ -31,10 +29,6 @@ const PaintingDetails = () => {
   switch (apiType) {
     case "home":
       painting = homePaintings[Number(id)];
-      break;
-
-    case "PaintingsImport":
-      painting = Paintings[Number(id)];
       break;
 
     case "CharcoalImport":
@@ -136,7 +130,8 @@ const PaintingDetails = () => {
             style={{ marginTop: "20px", fontSize: "1.1rem" }}
             variants={item}
           >
-          <p className='h2'>  Price :  {painting.price}</p>
+       
+       {/*  */}
           </motion.p>
           
 

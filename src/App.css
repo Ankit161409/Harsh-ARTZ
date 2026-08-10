@@ -237,9 +237,7 @@ body{
 .side
 {
 
-  margin-top:100px;
-  margin-left: 650px;
-  margin-bottom: 0px;
+  
        font-family: "Bonheur Royale", cursive;
   font-weight: 400;
   font-style: normal;
@@ -459,7 +457,11 @@ flex: 0 0 45%;
   height: 1px;
   background: var(--text-clr);
 }
-
+.font
+{
+  font-size: 80px;
+  /* border:solid  */
+}
 footer{
   background-color: #222222;
   padding: 40px;

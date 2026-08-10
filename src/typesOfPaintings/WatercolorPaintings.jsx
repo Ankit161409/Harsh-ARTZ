@@ -42,8 +42,7 @@ const WatercolorPaintings = () => {
                         }}
                         transition={{ duration: 1, ease: "easeOut" }}
                       >
-                      Digital Arts
-                       
+                   
                       </motion.h1>
                     </motion.div>
       {/* Navbar */}
@@ -60,6 +59,8 @@ const WatercolorPaintings = () => {
           },
         }}
       >
+
+      <h1 className="font">WaterColor Paintings</h1>
         {Water.map((painting, index) => (
           <motion.div
             key={painting.id || index}

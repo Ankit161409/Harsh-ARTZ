@@ -11,7 +11,7 @@ import Shop from './Pages/Shop';
 import LetsConnect from './Pages/LetsConnect';
 import PaintingDetails from './Pages/PaintingDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Paintings from './typesOfPaintings/Paintings';
+ 
 import Charcoals from './typesOfPaintings/CharcoalSketches';
 import Digital from './typesOfPaintings/DigitalArt';
 import ColouredPencil from './typesOfPaintings/ColouredPencil';
@@ -35,7 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/the-person-behind" element={<ThePersonBehind />} />
           <Route path="/art-gallery" element={<ArtGallery />} />
-          <Route path="/paintings" element={<Paintings />} />
+      
           <Route path="/charcoal-sketches" element={<Charcoals />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/lets-connect" element={<LetsConnect />} />

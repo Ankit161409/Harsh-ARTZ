@@ -42,7 +42,7 @@ const MixedMedia = () => {
                         }}
                         transition={{ duration: 1, ease: "easeOut" }}
                       >
-             Mixed Media
+       
                        
                       </motion.h1>
                     </motion.div>
@@ -60,6 +60,7 @@ const MixedMedia = () => {
           },
         }}
       >
+         <h1 className="font ">Mixed Media</h1>
         {Mixed.map((painting, index) => (
           <motion.div
             key={painting.id || index}

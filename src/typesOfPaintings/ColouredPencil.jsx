@@ -42,7 +42,7 @@ const ColouredPencil = () => {
                         }}
                         transition={{ duration: 1, ease: "easeOut" }}
                       >
-                     Coloured Pencil
+                
                        
                       </motion.h1>
                     </motion.div>
@@ -60,6 +60,7 @@ const ColouredPencil = () => {
           },
         }}
       >
+        <h1 className="font">Coloured Pencil</h1>
         {Coloured.map((painting, index) => (
           <motion.div
             key={painting.id || index}
