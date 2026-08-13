@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLocation, Link } from "react-router-dom";
 import "../App.css";
 import "./Header.css";
+import favicon from "../Images/additionalImages/favicon.png"
 
 
 const Header = () => {
@@ -69,7 +70,11 @@ const Header = () => {
         <div className="header-inner color-black">
           {/* LOGO */}
           <div className="logo">
-            <Link to="/">HArsh Artz</Link>
+            {/* <Link to="/">HArsh Artz</Link> */}
+             <img src={favicon}
+    alt="Harsh Artz"
+    className="site-logo"
+  />
           </div>
 
           {/* DESKTOP NAV */}
