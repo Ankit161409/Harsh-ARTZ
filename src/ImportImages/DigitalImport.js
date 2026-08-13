@@ -29,7 +29,7 @@ import img35 from '../Images/DigitalArt/image35.jpeg';
 import img36 from '../Images/DigitalArt/image36.png';
 import img37 from '../Images/DigitalArt/image37.png';
 import img38 from '../Images/DigitalArt/image38.png';
-// import img39 from '../Images/DigitalArt/image39.png';
+import img39 from '../Images/DigitalArt/image39.jpeg';
 import img40 from '../Images/DigitalArt/image40.png';
 import img41 from '../Images/DigitalArt/image41.jpeg';
 import img42 from '../Images/DigitalArt/image42.jpeg';
@@ -40,7 +40,7 @@ import img46 from '../Images/DigitalArt/image46.jpeg';
 import img47 from '../Images/DigitalArt/image47.png';
 import img48 from '../Images/DigitalArt/image48.png';
 import img49 from '../Images/DigitalArt/image49.png';
-import img50 from '../Images/DigitalArt/image50.png';
+// import img50 from '../Images/DigitalArt/image50.png';
 import img51 from '../Images/DigitalArt/image51.jpeg';
 import img52 from '../Images/DigitalArt/image52.jpeg';
 import img53 from '../Images/DigitalArt/image53.jpeg';
@@ -113,7 +113,6 @@ import img79 from '../Images/DigitalArt/image79.jpeg';
   { title: "Artwork 39", img: img47, artist: "Harsh ARTZ" },
   { title: "Artwork 40", img: img48, artist: "Harsh ARTZ" },
   { title: "Artwork 41", img: img49, artist: "Harsh ARTZ" },
-  { title: "Artwork 42", img: img50, artist: "Harsh ARTZ" },
   { title: "Artwork 43", img: img51, artist: "Harsh ARTZ" },
   { title: "Artwork 44", img: img52, artist: "Harsh ARTZ" },
   { title: "Artwork 45", img: img53, artist: "Harsh ARTZ" },
@@ -143,4 +142,6 @@ import img79 from '../Images/DigitalArt/image79.jpeg';
   { title: "Artwork 69", img: img77, artist: "Harsh ARTZ" },
   { title: "Artwork 70", img: img78, artist: "Harsh ARTZ" },
   { title: "Artwork 71", img: img79, artist: "Harsh ARTZ" },
+  { title: "Artwork 72", img: img39, artist: "Harsh ARTZ" },
+
 ];

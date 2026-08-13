@@ -1,6 +1,6 @@
 import img1 from '../Images/WatercolorPaintings/image64.png';
 import img2 from '../Images/WatercolorPaintings/image65.png';
-import img3 from '../Images/WatercolorPaintings/image64.png';
+import img3 from '../Images/WatercolorPaintings/image66.jpeg';
 
 
 export const Water = [
